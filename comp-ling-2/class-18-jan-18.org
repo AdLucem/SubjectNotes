@@ -1,0 +1,222 @@
+#+TITLE: Computational Linguistics II - 18/1/18 && 20/1/18
+#+AUTHOR: K.W.L && CL
+
+# CL: fuck this shit, Soma is a bitch.
+
+
+This is an introduction to the concept of semantics, representation of meaning, and how we can get started into looking at computational semantics.
+
+Computational semantics. The science of making a machine understand the /semantics/ of a language. At the computational semantic level, we deal with meaning from the word to the sentential level; dealing with the meaning of an entire text/conversation/story goes into the field of computational pragmatics. 
+
+# KW: Arguably, what the hell do the distinctions mean in this field, anyway 
+
+* What is Meaning?
+
+Sense and reference?
+
+"Hidden meaning" of a word?
+
+Meaning is information that has a certain representation.
+
+** Where is this meaning present?
+
+In the world? Collectively constructed? There in "your head"?
+
+** Language and Meaning
+
+Language and meaning are not the same. Language is *just one symbolic representation* of meaning.
+
+i.e: meaning can be conveyed in other forms too - signs, gestures, visual representation.
+
+Linguistic Symbols
+    | 
+    |
+   \|/       |---------|
+Language <---| Meaning |---> World outside
+             |---------|
+
+** Denotational Semantics
+
+                           | -----> Things
+Meaning --------|Associates| 
+                           | -----> Concepts 
+                           
+
+i.e: meaning associates /things/ with /concepts/.
+
+** Another School
+
+The word - language - triggers the /concept/ associated to the /thing/, and the /concept/ associated with the /thing/ gives you meaning.
+Eg: say, we have a chair. We are used to a chair having 4 legs.
+If meaning is strictly denotational, then... suppose we have a 5-legged chair that we /know/ is a chair... how do we know it is a chair if chair is strictly den. in meaning?
+
+
+                                        | -----> Things
+Lanuage --> Meaning -------->|Associates| 
+                                        | -----> Concepts |
+                           |                 |
+
+** Yet Another School
+
+
+                                        | -----> Things
+Lanuage --> Meaning -------->|Associates| -----> Concept 
+                                        | -----> Use (Context)
+                           
+i.e: a word without an usage or context, is incomplete.
+
+** Refinement
+
+May be different /stages/ of meaning : eg: word --> concept --(refined by)--> use.
+* Lexical Semantics
+
+We dealt with lexical semantics in CL-1 - i.e: meaning of individual words.
+
+We begin from the question: how do we understand meaning of a text (discourse)?
+
+|~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|
+| Discourse  --> Sentence --> Words |
+|~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|
+
+
+*** Word Order Non-Explicity Changing Word Meaning
+
+"Du jon chhele bari jabey." <-- (any) Two boys will go home. --> Default order
+"Chhele du jon bari jabey." <-- (these specific) Two boys will go home.
+
+i.e: change from the unmarked word order brings about semantic change.
+
+*** Therefore
+
+Meaning is there in:
+
+(1) Words
+(2) Relation between words
+    - Physical
+    - Marked explicity
+    - Unmarked
+(3) Context - in the /use/ of the word.
+
+Eg: "Ram ko iska phal milega."
+    "Ram ko kal do phal mil jayega."
+By this usage, we know that /phal/ refers to the result of an action in (1), and a fruit in (2).
+
+The process of deducing the meaning of a word in context is called *Word Sense Disambiguation*; it is a fucking hard task. 
+
+# is there actually any free-word-order language?
+# warlpiri? 
+
+*** A Statement
+
+"In a language, almost /all/ words are ambiguous. Every word in a language is overloaded." - Prof. Soma
+
+Given a dictionary with a word with 'n' meanings, how do we choose the right meaning in a given context?
+
+* Lexical-Semantic Knowledge Representations
+
+How to /compute/ meaning.
+
+** Vector Semantics
+
+    - Converting a word into numbers (roughly)
+    - A powerful tool for handling meaning in discourse
+** Frame Semantics
+
+For more reading about framenet, refer to [[FrameNet.org][this]].
+
+* Word Sense Disambiguation
+
+** Categorising
+** Part of Speech
+** Lesk's Algorithm
+
+Based on wordnet.
+
+* Going To The Sentence Level
+
+Once we know the meaning of a word, we need to compute the meaning of a /sentence/.
+
+*How do we compute the meaning of a sentence?*
+
+
+Sentences are, in most cases, not compositional w.r.t their words.
+
+That is, if I dissect a sentence into the meanings of the individual words in it- even accounting for disambiguation- I will not be able to derive the meaning of the entire sentence *simply from the meaning of the words within it*, unlike how I am able to derive the meaning of /sous-chef/ from the meanings of /sous/ (under) and /chef/.
+
+# Not many MWEs are compositional, either.
+
+What matters, apart from the words used, in determining the meaning of a sentence?
+
+  - Order. Sometimes.
+  - Context. 
+  - The relation of each word to the words around it. /up/ means something different as a preposition attached to a noun than it means by itself in an imperative sentence. In Paninian Grammar, a concept similar to this is called /vibhakti/.
+
+And the fucked up thing about language is that it does not always mark relations explicitly. It is sometimes marked through /yogyataa/ -> semantic "fitting", semantic suitability, sort of /world knowledge/. This is not an explicit representation, in a format that a computer can derive from a sentence or the contents thereof.
+
+To take a Hindi example: 
+
+#+BEGIN_EXAMPLE
+
+"Ram kal phal khayega." 
+"Ram phal kal khayega."
+
+#+END_EXAMPLE
+
+The positions of *kal* and *phal* are interchanged and neither is marked with vibhakti, but our world-knowledge tells us that /phal/ is edible and /kal/ is not, so we infer that /kal/ in either sentence refers to the date.
+
+** Well, what do we mean by 'Meaning of a sentence' ?
+
+When communication fails between a human and a machine, or between any two entities, then the transfer of meaning intact has failed.
+
+*** Can be represented as a predicate logical sentence
+
+i.e: an ordered logical formula.
+*** Inferencing
+
+/Infers/ that X is a Y.
+
+Eg: "Ram bought a maruti suzuki."
+    "Did Ram buy a car?"
+
+To answer this, system has to /infer/ that Maruti Suzuki --> Car.
+
+*** Scope of Semantics
+
+Give the machine a /knowledge representation/ that it can manipulate to achieve a certain task.
+
+** Semantic Representation
+
+How are we representing knowledge so that it becomes computationally tractable.
+What would be a good knowledge representation for a machine to be able to manipulate info. for a given task.
+** Semantic Parsing
+
+Getting the meaning of a sentence (into logical representation), from the words.
+
+** Context
+
+How can we /manipulate/ a sentence to get the meaning of a discourse.
+
+# what are the state-of-the-art methods for computational semantics?
+* Resources/Tools For These Tasks
+
+** FrameNet
+
+A much richer semantic resource.
+
+For each word, FNet provides all the /frames/ - syntactic and semantic - where the word can occur. This resource can be used to disambiguate a word.
+
+For more reading about framenet, refer to [[FrameNet.org][this]].
+
+* Class Notes : Homework
+
+#+BEGIN_QUOTE homework
+How do we use framenet to disambiguate a word? Design an algorithm.
+Look at the paper - Frame Semantics, by Fillmore.
+Detail the shortcomings of your algorithm.
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Play around with wordToVec.
+#+END_QUOTE
+
+* What does it mean for a machine to understand a concept

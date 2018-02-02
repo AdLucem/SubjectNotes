@@ -1,0 +1,16 @@
+#+TITLE: Frame Semantics and FrameNet
+#+AUTHOR: C.A.L
+
+
+* Frames
+
+A frame is the rather obvious concept that certain words only make sense in a particular context. Hell, a particular word (form) may have different senses depending on the context.
+
+We define each one of these 'contexts' as frames.
+* FrameNet
+
+An annotation of sentences as fitting into /frames/.
+* Lesk's Algorithm
+* Lesk's Algorithm using FrameNet
+
+# umm... lesk's algo using framenet as the dictionary???
