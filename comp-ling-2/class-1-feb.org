@@ -14,10 +14,6 @@ Eg: "Ram_[person_named_ram] eats_[verb_meaning_consume] mangoes[noun_mangoes]."
 
 Take a basic Phrase Structure Grammar. It overgenerates- generates ungrammatical sentences. Therefore, the grammar is not sufficient, and we have to add more constraints and conditions.
 
-# silent haskell-orgasming (haskgasming?) 
-# USE TYPED FUNCTIONAL LANGUAGES BITCHES
-# THEY BE BAE FOR CONSTRAINTS
-
 Eg: 
 
 S --> NP VP
@@ -35,11 +31,7 @@ Add ~number agreement~ constraints to the rule =NP --> Det N=.
 
 Add ~number agreement~ indicating that, in =S --> NP VP=, the ~head noun~ of the ~(subject) NP~ will agree in number with the ~head verb~ of the ~(predicate) VP~ 
 
-# is it uhh still a CFG? with constraints?
-
-** Therefore, A Goal for the Class
-
-A constraint-based grammar for composition of sentences.
+But, at this point, we are going beyond what a simple Context Free Grammar can define. Therefore- we study a model that allows compositionality with constraints.
 
 * How Parts Are Represented
 
@@ -88,9 +80,7 @@ This type has the following features:
 
 It is the head of a sentence that relates to the head of the other sentences.
 
-# i am slightly worried about soma's family :P
-
-Also, the head and the information of its children that the head contains are being percolated down. We capture this value using =LTOP= - the label of the top level frame in a combinatorial expression.
+Also, the head and the information of its children that the head contains are being percolated down the feature graph. We capture this value using =LTOP= - the label of the top level frame in a combinatorial expression.
 
 * Constraints
 
