@@ -34,6 +34,33 @@ TRANS. V
 
 However, we can have an underspecified type in it's space.
 
+* Won't we have infinite thematic roles in the feature matrix for, say, verbs, because we can have near-infinite attachments to a verb in a sentence?
+
+So, we can solve this problem in 2 ways.
+
+One- like framenet, we can do a corpus study and annotate every possible case that can attach to a verb.
+
+Or else- since the above is a retarded approach- instead of making something as specific as a /trans-verb/ a primitive type, make it a composite type that inherits from sub-types, and put mechanisms for compositionality. Like so-
+
+(1) Have a set of abstract feature sets as types
+(2) Have a set of constraints assigned on the composition of types, for well-formedness.
+
+Eg:
+
+VERB (primitive type) 
+               -[Composition w/constraints with a THEME]->  TRANS. V (composite type)
+
+
+THEME (primitive type)
+... <we can add more roles here>
+
+# using types in linguistics?
+# ah fuck, sexy
+
+** Using Adjuncts Instead?
+
+Does not really work for languages other than english.
+
 * Constructing Semantic Structure of Sentences
 
 We try to automate the process of assigning semantic representations of human languages?
@@ -106,31 +133,6 @@ So when the unification of the types in a sentence is successful, we get the sem
 THIS BE COMPOSITIONALITY, BITCHES!
 
 Note: order of compositionality does not matter.
-
-* Won't we have infinite thematic roles in the feature matrix for, say, verbs, because we can have near-infinite attachments to a verb in a sentence?
-
-So, we can solve this problem in 2 ways.
-
-One- like framenet, we can do a corpus study and annotate every possible case that can attach to a verb.
-
-Or else- instead of making something as specific as a /trans-verb/ a primitive type, make it a composite type that inherits from sub-types, and put mechanisms for compositionality. Like so-
-
-(1) Have a set of abstract feature sets as types
-(2) Have a set of constraints assigned on the composition of types, for well-formedness.
-
-Eg:
-
-INTRANS. V. (primitive type) 
-               -[Composition w/constraints]->  TRANS. V (composite type)
-THEME (primitive type)
-... <we can add more roles here>
-
-# using types in linguistics?
-# ah fuck, sexy
-
-** Using Adjuncts Instead?
-
-Does not really work for languages other than english.
 * Fish
 
 ASK HER TO SHARE RESOURCES ON EVENT SEMANTICS AND LOGICS THAT REPAIR THE FLAWS OF PREDICATE LOGIC

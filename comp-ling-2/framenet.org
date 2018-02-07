@@ -1,12 +1,36 @@
-#+TITLE: Frame Semantics and FrameNet
-#+AUTHOR: C.A.L
+#+TITLE: Frame Semantics And Frame-Annotating The Entire Bloody World
+#+AUTHOR: C.A.L && K.W
 
+
+# kw: Wait, isn't this just an advanced version of domain-specific rules?
 
 * Frames
 
-A frame is the rather obvious concept that certain words only make sense in a particular context. Hell, a particular word (form) may have different senses depending on the context.
+A frame is the concept that certain words only make sense in a particular context. Hell, a particular word (form) may have different senses depending on the context.
 
 We define each one of these 'contexts' as frames.
+
+*Frame Semantics* is a study of how we associate linguistic forms with the cognitive structure of a frame, and interpret/disambiguate things in the context of this frame.
+
+* Frame Semantics
+
+** Frame Invocation
+** Frame Evocation
+
+* Frames in a Cognitive Sense
+
+#+BEGIN_QUOTE
+
+The  background  knowledge  assigned  to  frames  is  often  so thoroughly  “over-learned”  that  considerable  cognitive  effort  is  sometimes  required  to  bring  it  to consciousness. For example, we cannot understand the meaning of Tuesday without knowing about how time is reckoned in Western culture, including the established cycle of seven days and the naming of the members of the cycle. The concepts week-day and weekend depend on still more knowledge, this time involving designated members of the cycle typically dedicated to work and non-work. Understanding an expression like "Thank God it’s Friday!" depends in turn on that distinction and
+an  assumed  natural  preference  of  non-work  over  work.  Similar principles  apply to categories such as the four seasons, the compass directions, up vs. down, right vs. left, and thousands of others. These lexical units all call on shared background conceptualizations  and  are  best  learned,  and  understood,  in  packages,  large  or
+small.
+
+#+END_QUOTE
+
+** Nouns and Frames
+
+Nouns - *formal* and *telic* properties of a noun.
+
 * FrameNet
 
 An annotation of sentences as fitting into /frames/.

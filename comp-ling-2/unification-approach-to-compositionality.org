@@ -1,13 +1,12 @@
 #+TITLE: An Unification-Based Approach To Compositionality
-#+AUTHOR: C.A.L
-
+#+AUTHOR: C.A.L && K.W
 
 
 Representation of a sentence will not be in a *lexicon*, while the representation of a word will.
 
 We have to /derive/ the meaning of a sentence from the information present in the sentence.
 
-Eg: "Ram_[person_named_ram] eats_[verb_meaning_consume] mangoes[noun_mangoes]."
+Eg: "Ram_[person_named_ram] eats_[verb_meaning_to eat a thing] mangoes[noun_mangoes]."
 
 How do we do that?
 
@@ -34,9 +33,9 @@ Add ~number agreement~ indicating that, in =S --> NP VP=, the ~head noun~ of the
 
 But, at this point, we are going beyond what a simple Context Free Grammar can define. Therefore- we study a model that allows compositionality with constraints.
 
-* Feature Structure
+* Feature Structures
 
-A feature structure is a list of features and values. We choose features that will help us derive semantic representations in the long run.
+A feature structure is a list of features and values, that represents a linguistic unit (word, lexeme, sentence, etc). We choose features that will help us derive semantic representations in the long run.
 
 ** Feature Structures As Types
 
@@ -88,18 +87,24 @@ FORM --> /wordform/
 SYN --> /syn-obj/
         -------------------------
         CAT --> /noun/
-        VAL 
+        VAL --> NULL
 
 SEM --> /sem-obj/ 
        --------------------------
        INDEX
-       LTOP
+       LTOP --> /NULL/
        FRAME --> /entity-fr/
                  ----------------
                  ENTITY
                  NAME
 ---------------------------------
-       
+
+
+"I ate (her) out." - Ojaswi, 2k18
+
+NP :: "the girl 's" 
+
+the --> "girl" <-- <possessive indicator> 's
 ** Verb
 
 Here we take a frame for a transitive verb.
@@ -142,6 +147,11 @@ FRAME --> /event-fr/ {verbs represent events. Refer to FrameNet to understand wh
                   THEME {same as AGENT}
           ------------------------------------------------------
 ----------------------------------------------------------------
+
+"I eat out her." - Ojaswi 2k18
+
+"Honestly, WSD just sounds like some sort of street drug" - Ojaswi, 2k18
+"LSD. You're thinking of LSD." - Atreya, 2k18
 
 * LTOP Type, And The Importance Of Giving Head
 
@@ -225,3 +235,10 @@ THIS BE COMPOSITIONALITY, BITCHES!
 
 Note: order of compositionality does not matter.
 
+* Unifying the Bloody Structures
+
+/ref. to Jurafsky & Martin, Chapter 15/
+
+The basic cases are simple; I will here name some of the more complex cases.
+
+** Re-Entrant Structures
