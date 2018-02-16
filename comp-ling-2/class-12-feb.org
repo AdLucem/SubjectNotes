@@ -105,3 +105,4 @@ There are two types of not following:
 * Assignment
 
 Give examples of all of Grice's Maxims
+(With citations as to where we got the examples from)
