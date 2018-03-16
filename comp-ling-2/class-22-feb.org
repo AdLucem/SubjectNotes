@@ -1,0 +1,68 @@
+#+TITLE: Class Notes- 22/2/18
+#+AUTHOR: A Series Of Unfortunate Breakdowns
+
+
+* Schema
+
+The 'standard' workd-frame from which one draws inferences.
+
+"Universe of discourse"
+
+* Inferences
+
+We can, for example, 'fill in the gaps' of a story using inferences.
+
+... Commonality between movies by the same author, or media in the same genre? What were we talking about again?
+
+Everything has a 'macro-level' structure.
+
+... ??
+
+Relations between words, sentences => micro-level structure.
+
+Everything has a structure? Conversations, stories, newspapers...?
+
+# what are we talking about???
+* Structural Analysis of a Newspaper
+
+** Micro-Level Analysis
+
+   - Beginning :: 
+                 - <standard thing> has happened... but NEW THING!
+   - Article Structure ::
+                 - May even be an interview
+   - Headline Structure ::
+                 - Different, depending on page
+
+So, the idea is- libraries full of newspapers, magazines, novels- all of them may have common roots. But what helps us categorize something into a novel, magazine, newspaper - that depends on structure and discourse analysis.
+
+* Anaphora Resolution
+* Coreferents
+
+** Endophoric
+
+Eg: "This boy likes eggs."
+
+This boy --> endophoric
+
+*** Anaphoric
+
+"Looking back"
+
+**** Repeated Form
+
+i.e: name repeated.
+
+**** Partially Repeated Form
+**** Lexical Replacement
+**** Pronominal
+**** One Substitution
+**** Elided
+
+*** Cataphoric 
+
+External.
+
+** Exophoric
+
+

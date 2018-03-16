@@ -1,0 +1,10 @@
+#+TITLE: Computational Linguistics II Notes - 7/3/18
+#+AUTHOR: K.W.
+
+
+* What is an event
+
+  - Has certain participants in it
+  - Changes the properties of participants
+
+** Events at a syntactic level?
