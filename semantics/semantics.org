@@ -1,4 +1,3 @@
-
 #+TITLE: A Brief Summary Of Semantics
 #+AUTHOR: KW
 
@@ -13,6 +12,52 @@ Or so I think, anyway.
 * Frame Semantics
 * Segueing From That: Compositional Typed Semantics
 * Event Semantics
+
+** Types of events
+
+*** Telic
+
+Set terminal point of event.
+
+**** Activity
+
+/for/ - adverbial
+
+**** Stative
+
+/for/ - adverbial
+
+*** Atelic
+
+No set terminal point of event.
+
+**** Achievement
+
+/in/ - adverbial
+
+**** Accomplishment
+
+/in/ - adverbial
+** Subevents
+
+Events can be decomposed into subevents. A very nice example of this can be seen with the Kaaraka-based parsing of the sentence:
+
+"Aaurat ne bacche ko doodh pilaya."
+
+Subevents: "pilaya - Aaurat --> bacche"
+           "piya - baccha --> doodh"
+
+An event can also be broken down into subevents in the sense of having an internal process, a terminal state, a consequent state, etc. For example:
+
+    ACTIVITY denotes a process
+    ACCOMPLISHMENT denotes a process leading up to a result state
+
+** Arguments of events
+
+*** Arguments vs. adjuncts
+
+We went over this with reference to X-bar structures already.
+
 * Distributional Semantics
 
 Defining the semantics of a word (or any linguistic element, really), with respect to its relationships with other elements /in a text/. (Well, obviously, where else do we mine the information from?)
@@ -25,6 +70,8 @@ Defining the semantics of a word (or any linguistic element, really), with respe
     - *Semantic similarity* is measured using geometrical space between the word-vectors
     - The values within a vector matrix of a word are the occurrences of that word within given context (i.e: each 'dimension' of the vector space is a particular context)
 
+*** Skip-Gram
+*** CBOW
 ** Graph Semantics
 
 The basic idea is: stop using vectors, start using graphs with weighted edges.
