@@ -1,0 +1,51 @@
+
+#+TITLE: A Brief Summary Of Semantics
+#+AUTHOR: KW
+
+# Note: this is more like a mind-map than a set of notes, really. 
+
+Computational semantics. I've put my notes on this here: [computational semantics notes???]. Here are a few computational semantic models in current usage, almost all of them are terrible.
+
+Or so I think, anyway.
+
+# oh thank fuck I didn't lose my notes
+
+* Frame Semantics
+* Segueing From That: Compositional Typed Semantics
+* Event Semantics
+* Distributional Semantics
+
+Defining the semantics of a word (or any linguistic element, really), with respect to its relationships with other elements /in a text/. (Well, obviously, where else do we mine the information from?)
+
+# N: A knowledgebase. 
+
+** Vector Semantics
+
+    - Words are represented as vectors in a high-dimension vector space
+    - *Semantic similarity* is measured using geometrical space between the word-vectors
+    - The values within a vector matrix of a word are the occurrences of that word within given context (i.e: each 'dimension' of the vector space is a particular context)
+
+** Graph Semantics
+
+The basic idea is: stop using vectors, start using graphs with weighted edges.
+Why would we do this?
+
+*** Well, there are a few advantages
+
+    - A vector space, theoretically, can have an infinite number of dimensions. A graph just needs to store edges and edge weights.
+    - Dense vector spaces, in particular, suffer from information loss as the amount of information about a particular word is equal to the number of dimensions. Some information will be lost. Say, a minor distinction between two words based on some obscure bit of context might be lost if we prune the number of dimensions to a decent size.
+    - Multiple types of edges, multiple types of pair-relations. This is demonstrated by the /@/ relation: instead of simple contexts, we can define the relation of words to each other based on, say, dependencies.
+    - I really don't know what MapReduce has to do with anything, but it 'somehow' scales without using a lot of RAM. Somehow. Take it on trust.
+    - Can easily make a *Distributional Thesaurus* based on commonality of (ranked) neighbours
+    - Similarity: can retrieve most similar words (based on a common *semantic neighbourhood*) much easier than a vector-representation-system can do it. Also, the triangle inequality does not hold with graph-based similarity calculations, while it holds for vector-based similarity calculations. Just think about it:
+
+D(a,b) + D(a,c) >= D(b,c)
+
+So, suppose we wanted to calculate similarity between three words, a will always be more similar to both b and c than b and c will be to each other.
+
+I think. I'm just bullshitting here.
+
+    - With a graph-based representation, you really cannot compare words that don't have a lot in common. With a vector representation, you can compare anything, including ridiculous comparisions.
+    - Looks pretty: you can represent it like a nice, zoomable graph, where the most common words are displayed at lower resolutions, and split into a component 'subgraph' so to speak when zoomed in. 
+
+*** Graph-Based Sense-Clustering Using Chinese Whisper Algorithm
