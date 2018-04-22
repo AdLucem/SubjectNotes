@@ -81,4 +81,24 @@ Note: the number of iterations in the clustering step needed before classes stop
 
 **** Chinese Whisper Algorithm For WSI
 
-We perform 
+We perform CW on a co-occurrence graph. 
+
+I don't know if it's the same co-occurrence graph as described in [[./words_co_occur_in_list.pdf][this paper]] (just look at the "Building a graph on similar words" section- it describes how they add edges between words that specifically co-occur in a list, like say "bread, milk and eggs"- that sort of list), or just a normal co-occurrence graph. Here's what the paper says:
+
+#+BEGIN_QUOTE
+
+Similar to the approach as presented in (Dorow
+and Widdows, 2003) we construct a word graph.
+While there, edges between words are drawn iff
+words co-occur in enumerations, we use the co-
+occurrence graph.
+
+#+END_QUOTE
+
+God knows what the fuck that means.
+
+Anyway, to automatically derive the multiple senses of a single word, they:
+
+(1) Take the sub-graph formed by the neighbourhood (all nodes connected to) that word.
+(2) Run CW on this sub-graph.
+(3) Assume that each resultant cluster represents a single sense.
