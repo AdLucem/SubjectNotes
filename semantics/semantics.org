@@ -32,6 +32,7 @@ Why would we do this?
 
 *** Well, there are a few advantages
 
+    - Reduces time complexity of algorithms because you have to iterate over a graph instead of a matrix
     - A vector space, theoretically, can have an infinite number of dimensions. A graph just needs to store edges and edge weights.
     - Dense vector spaces, in particular, suffer from information loss as the amount of information about a particular word is equal to the number of dimensions. Some information will be lost. Say, a minor distinction between two words based on some obscure bit of context might be lost if we prune the number of dimensions to a decent size.
     - Multiple types of edges, multiple types of pair-relations. This is demonstrated by the /@/ relation: instead of simple contexts, we can define the relation of words to each other based on, say, dependencies.
@@ -49,3 +50,35 @@ I think. I'm just bullshitting here.
     - Looks pretty: you can represent it like a nice, zoomable graph, where the most common words are displayed at lower resolutions, and split into a component 'subgraph' so to speak when zoomed in. 
 
 *** Graph-Based Sense-Clustering Using Chinese Whisper Algorithm
+
+The paper on this is somewhere in this directory. It's a pretty nice paper, do give it a read.
+
+**** Nice things about it
+
+    - Time-linear in the number of edges. Nice.
+
+**** Chinese Whisper Algorithm for general G(V, E)
+
+First, we describe how the algorithm works on a general graph, then show how it also works in sense-clustering.
+
+#+BEGIN_EXAMPLE
+
+  initialisation step :
+      for all v belonging to V :
+          class(v) = <random>
+
+  clustering step :
+      while there are changes in node classes:
+          for all v in V, selected in random order :
+              class(v) = highest ranked class in the neighbourhood of v
+              where
+                  rank(class_i) <-- forAll nodes in neighbourhood of v belonging to class_i:
+                                      return sum(weights of edges from nodes to v)
+     
+#+END_EXAMPLE
+    
+Note: the number of iterations in the clustering step needed before classes stop changing, depends on the diameter of the graph (i.e: the maximum number of edges on a shortest path between two nodes).
+
+**** Chinese Whisper Algorithm For WSI
+
+We perform 
