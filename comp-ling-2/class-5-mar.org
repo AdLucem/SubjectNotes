@@ -12,7 +12,7 @@ Like so: /E e (laugh(e))/  - i.e: there exists an event =e= such that =e= is =la
 
 Or , to say:
 
-/E x, e (cries(e), boy(x), agent(e, x))/ - i.e: there exists an event =e= and an entity =x= such that =e= is =cries=, =x= is =laugh=, and =x= is the =agent= of =e=.
+/E x, e (cries(e), boy(x), agent(e, x))/ - i.e: there exists an event =e= and an entity =x= such that =e= is =cries=, =x= is =boy=, and =x= is the =agent= of =e=.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------
 
