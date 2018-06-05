@@ -1,0 +1,79 @@
+#+TITLE: Abstract Meaning Representation for Sembanking
+#+AUTHOR: LET'S GET DOWN TO BUSINESS
+
+* AMR Concept-Set
+
+So my problem with the AMR concept-set is that, like any closed set of descriptors that describes a myriad, ever-changing system, they will not be all-encompassing, and will have to be updated and reviewed for each language.
+
+Also, isn't the concept-set very English-dependent? It would be interesting to see how this fits Hindi sentences- make AMRs for Hindi? (Note: TODO)
+
+This is summarised by the AMR concept-set:
+
+
+** Frame arguments, following PropBank conventions.
+
+#+BEGIN_QUOTE
+:arg0, :arg1, :arg2, :arg3, :arg4,
+:arg5
+
+#+END_QUOTE
+
+/mutters indistinctly about the infinite amount of frame arguments one can stuff into a sentence/
+
+"I *did NAHT hit* her on the doorstep of her house using a thousand salad plates on the fourteenth of January in the bright light of day while her mother..."
+
+** General  semantic  relations.
+
+#+BEGIN_QUOTE
+
+:accompanier, :age, :beneficiary,  :cause,  :compared-
+to, :concession, :condition, :consist-of, :de-
+gree, :destination, :direction, :domain, :dura-
+tion, :employed-by, :example, :extent, :fre-
+quency, :instrument, :li, :location, :manner,
+:medium, :mod, :mode, :name, :part, :path, :po-
+larity, :poss, :purpose, :source, :subevent, :sub-
+set, :time, :topic, :value.
+
+#+END_QUOTE
+
+ARGH THIS IS A NEVERENDING SET AS LONG AS THERE ARE PEOPLE IN THIS WORLD.
+
+** Relations for quantities
+
+#+BEGIN_QUOTE
+
+:quant, :unit, :scale.
+#+END_QUOTE
+
+'Almost'? 'Not quite so many'? Et cetera.
+
+** Relations for date-entities
+
+#+BEGIN_QUOTE
+:day, :month,
+:year, :weekday, :time, :timezone, :quarter,
+:dayperiod, :season, :year2, :decade, :century,
+:calendar, :era
+#+END_QUOTE
+
+Epoch, age, klicks- oh wait, that last one's distance.
+
+** Relations for lists
+
+#+BEGIN_QUOTE
+:op1, :op2, :op3, :op4, :op5,
+:op6, :op7, :op8, :op9, :op10
+
+#+END_QUOTE
+
+/mutters/ op6000, op6001, op6002...
+
+* Syntactic Sugar
+
+I think it's cute that the concept of 'syntactic sugar' exists with respect to, well, language.
+
+
+* Groningen Meaning Bank
+
+Another sembank.

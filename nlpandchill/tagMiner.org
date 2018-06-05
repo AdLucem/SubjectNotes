@@ -1,0 +1,23 @@
+#+TITLE: TagMiner : A Semisupervised Associative POS Taggers for Resource-Poor Languages
+#+AUTHOR: C.A.L
+
+
+Rule-based, stochastic supervised and unsupervised approaches perform poorly when there's not much data available. 
+Semisupervised techniques require a large untagged corpus, too.
+So how do we solve the problem for resource-poor languages, in which neither of the above are available?
+
+* Formal Definition of the Problem
+
+Automated POS tagging is a classification task where:
+
+Given:
+
+A set of tags =Tau= = {T_1, T_2... T_n}
+
+Annotated set of tagged sentences =AS= = {S_t_1, S_t_2, ... S_t_N} 
+  where S_t_i = {W_1/T_i, W_2/T_j... W_n/T_k} (Where W_i is a word and T_i is a tag from =Tau=)
+
+And a raw untagged training corpus of sentences =D= = {S_1, S_2... S_m}, where 
+* To Explore Further
+
+   - Data mining approaches to natural language tasks?
