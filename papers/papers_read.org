@@ -9,6 +9,17 @@ An ordered repository of papers I've read/am intending to read/considered.
     - Abstract :: Hyperedge replacement grammar (HRG) is a formalism for generating and transforming graphs that has potential applications in natural language understanding and generation. A recognition algorithm due to Lautemann is known to be polynomial-time for graphs that are connected and of bounded degree. We present a more precise characterization of the algorithm’s complexity, an optimization analogous to binarization of context-free grammars, and some important implementation details, resulting in an algorithm that is practical for natural-language applications. The algorithm is part of Bolinas, a new software toolkit for HRG processing.
     - Status :: skimmed
 
+  + Enriching Word Vectors With Subword Information
+    - Abstract :: Continuous word representations, trained on large unlabeled corpora are useful for many natural language processing tasks. Popular models that learn such representations ignore the morphology of words, by assigning a distinct vector to each word. This is a limitation,
+especially for languages with large vocabularies and many rare words. In this paper, we propose a new approach based on the skipgram model, where each word is represented as a bag of character n-grams. A vector representation is associated to each character n-gram; words being represented as the sum of these representations. Our method is fast, allowing to train models on large corpora quickly and allows us to compute word representations for words that did not appear in the training data. We evaluate our word representations on nine different languages, both on word similarity and analogy tasks. By comparing to recently proposed morphological word representations, we show that our vectors achieve state-of-the-art performance on these tasks.
+    - Status :: not-read
+ 
+* Rule Mining
+
+  + TagMiner: A Semisupervised Associative POS Tagger Effective for Resource Poor Languages
+    - Abstract :: We present here, TagMiner, a data mining approach for part-of-speech (POS) tagging, an important Natural language processing (NLP) classification task. It is a semi-supervised associative classification method for POS tagging. Existing methods for building POS taggers require extensive domain and linguistic knowledge and resources. Our method uses combination of a small POS tagged corpus and a raw untagged text data as training data to build the classifier model using association rules. Our tagger works well with very little training data also. The use of semi-supervised learning provides the advantage of not requiring a large high quality tagged corpus. These properties make it especially suitable for resource poor languages. Our experiments on various resource-rich, resource-moderate and resource-poor languages show good
+performance without using any language specific linguistic information. We note that inclusion of such features in our method may further improve the performance. Results also show that for smaller training data sizes our tagger performs better than state-of-the-art CRF tagger using same features as our tagger.
+    - Status :: read
 * Keyphrase Extraction
 
    + Automatic Keyphrase Extraction: A Survey of the State of the Art
@@ -17,6 +28,16 @@ An ordered repository of papers I've read/am intending to read/considered.
 
 * Question-Answering
 
+** Question-Answering Sytems
+
+   + Hand in Glove: Deep Feature Fusion Network Architectures for Answer Quality Prediction in Community Question Answering
+     - Abstract :: Community Question Answering (cQA) forums have become a popular medium for soliciting answers to specific user questions from experts and experienced users in a given topic. However, for  a  given  question,  users  sometimes  have  to  sift  through  a  large  number  of  low-quality  or irrelevant answers to find out the answer which satisfies their information need. To alleviate this, the problem of Answer Quality Prediction (AQP) aims to predict the quality of an answer posted in response to a forum question.  Current AQP systems either learn models using - a) various hand-crafted features (HCF) or b) Deep Learning (DL) techniques which automatically learn the feature representations. In this paper, we propose a novel approach for AQP known as - “Deep Feature Fusion Network (DFFN)” which combines the advantages of both hand-crafted features and deep learning based systems.  Given a question-answer pair along with its metadata, a DFFN architecture independently - a) learns features using the Deep Neural Network (DNN) and b) computes hand-crafted features leveraging various external resources and then combines them using a fully connected neural network trained to predict the quality of the given answer.  DFFN is an end-end differentiable model and trained as a single system. We propose two different DFFN architectures which vary mainly in the way they model the input question/answer pair - a) DFFN-CNN which uses a Convolutional Neural Network (CNN) and b) DFFN-BLNA which uses a Bi-directional LSTM with Neural Attention (BLNA). Both these proposed variants of DFFN (DFFN-CNN and DFFN-BLNA) achieve state-of-the-art performance on the standard SemEval-2015 and SemEval-2016 benchmark datasets and outperforms baseline approaches which individually employ either HCF or DL based techniques alone.
+    - Status :: skimmed
+
+   + Together We Stand: Siamese Networks for Similar Question Retrieval
+     - Abstract :: Community  Question  Answering  (cQA) services  like  Yahoo! Answers,  Baidu Zhidao,   Quora,   StackOverflow etc. provide  a  platform  for  interaction  with experts  and  help  users  to  obtain  precise and  accurate  answers  to  their  questions. The  time  lag  between  the  user  posting  a question  and  receiving  its  answer  could be  reduced  by  retrieving  similar  historic questions  from  the  cQA  archives. The main challenge in this task is the “lexico- syntactic” gap between the current and the previous questions.  In this paper, we propose  a  novel  approach  called “Siamese Convolutional Neural Network for cQA (SCQA)” to  find  the  semantic  similarity between the current and the archived questions. SCQA  consist  of  twin  convolutional neural networks with shared parameters and a contrastive loss function joining them. SCQA  learns  the  similarity  metric  for question-question pairs by leveraging the question-answer pairs available in cQA forum archives. The model projects semantically similar question pairs nearer to each other  and  dissimilar  question  pairs  farther away from each other in the semantic space. Experiments on large scale real-life “Yahoo! Answers” dataset reveals that SCQA  outperforms  current  state-of-the-art approaches based on translation models, topic models and deep neural network based  models  which  use  non-shared  parameters.
+    - Status :: skimmed
+ 
 ** Query Parsing
 
    + Syntactic Parsing of Web Queries With Question Intent
@@ -34,6 +55,13 @@ An ordered repository of papers I've read/am intending to read/considered.
    + A Transition-Based Algorithm for AMR Parsing
      - Abstract :: We  present  a  two-stage  framework  to  parse a sentence  into  its  Abstract  Meaning  Representation (AMR). We first use a dependency parser  to  generate  a  dependency  tree  for  the sentence. In  the  second  stage,  we  design a novel transition-based algorithm that transforms the dependency tree to an AMR graph. There  are  several  advantages  with  this  approach.   First,  the dependency parser can be trained on a training set much larger than the training set for the tree-to-graph algorithm, resulting in a more accurate AMR parser overall.  Our parser yields an improvement of 5% absolute in F-measure over the best previous result.  Second, the actions that we design are linguistically intuitive and capture the regularities in the mapping between the dependency structure and the AMR of a sentence.  Third, our parser runs in nearly linear time in practice in spite of a worst-case complexity of O(n2)
       - Status :: skimmed
+** ELMo
+
+   + Deep Contextualised Word Representations
+     - Abstract :: We introduce a new type of deep contextualized word representation that models both (1) complex characteristics of word use (e.g., syntax and semantics), and (2) how these uses vary across linguistic contexts (i.e., to model polysemy). Our word vectors are learned func-
+tions of the internal states of a deep bidirectional language model (biLM), which is pretrained on a large text corpus. We show that these representations can be easily added to existing models and significantly improve the state of the art across six challenging NLP problems, including question answering, textual entailment and sentiment analysis. We also present an analysis showing that exposing the deep internals of the pre-trained network is crucial, allowing downstream models to mix different types of semi-supervision signals.
+    - Status :: not-read
+
 * Semantic Parsing
 
   + Universal Semantic Parsing
