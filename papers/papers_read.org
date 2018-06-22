@@ -1,0 +1,49 @@
+#+TITLE: Papers Read
+
+An ordered repository of papers I've read/am intending to read/considered.
+
+
+* Can't Decide The Category
+
+  + Parsing Graphs With Hyperedge Replacement Grammars
+    - Abstract :: Hyperedge replacement grammar (HRG) is a formalism for generating and transforming graphs that has potential applications in natural language understanding and generation. A recognition algorithm due to Lautemann is known to be polynomial-time for graphs that are connected and of bounded degree. We present a more precise characterization of the algorithm’s complexity, an optimization analogous to binarization of context-free grammars, and some important implementation details, resulting in an algorithm that is practical for natural-language applications. The algorithm is part of Bolinas, a new software toolkit for HRG processing.
+    - Status :: skimmed
+
+* Keyphrase Extraction
+
+   + Automatic Keyphrase Extraction: A Survey of the State of the Art
+     - Abstract :: While automatic keyphrase extraction has been  examined  extensively,  state-of-the-art performance on this task is still much lower than that on many core natural language processing tasks.  We present a survey  of  the  state  of  the  art  in  automatic keyphrase extraction, examining the major sources of errors made by existing systems and discussing the challenges ahead.
+    - Status :: read
+
+* Question-Answering
+
+** Query Parsing
+
+   + Syntactic Parsing of Web Queries With Question Intent
+     - Abstract :: Accurate automatic processing of Web queries is important  for  high-quality  information  retrieval  from the  Web.   While  the  syntactic  structure  of  a  large portion  of  these  queries  is  trivial,  the  structure  of queries with question intent is much richer.  In this paper  we  therefore  address  the  task  of  statistical syntactic  parsing  of  such  queries.    We  first  show that the standard dependency grammar does not account for the full range of syntactic structures manifested  by  queries  with  question  intent.   To  alleviate this issue we extend the dependency grammar to account for segments – independent syntactic units within  a  potentially  larger  syntactic  structure.   We then propose two distant supervision approaches for the task.  Both algorithms do not require manually parsed queries for training. Instead, they are trained on millions of (query, page title) pairs from the Community Question Answering (CQA) domain,  where the CQA page was clicked by the user who initiated the query in a search engine. Experiments on a new treebank consisting of 5,000 Web queries from the CQA domain, manually parsed using the proposed grammar, show that our algorithms outperform alternative approaches trained on various sources: tens of thousands of manually parsed OntoNotes sentences, millions of unlabeled CQA queries and thousands of manually segmented CQA queries
+    - Status :: read
+
+* Semantic Representations
+
+** AMR
+
+   + Abstract Meaning Representation For Sembanking
+     - Abstract :: We describe Abstract Meaning Representation (AMR), a semantic representation language in which we are writing down the meanings of thousands of English sentences. We hope that a sembank of simple, whole-sentence semantic structures will spur new work in statistical natural language understanding and generation, like the Penn Treebank encouraged work on statistical parsing. This paper gives an overview of AMR and tools associated with it.
+     - Status :: read
+
+   + A Transition-Based Algorithm for AMR Parsing
+     - Abstract :: We  present  a  two-stage  framework  to  parse a sentence  into  its  Abstract  Meaning  Representation (AMR). We first use a dependency parser  to  generate  a  dependency  tree  for  the sentence. In  the  second  stage,  we  design a novel transition-based algorithm that transforms the dependency tree to an AMR graph. There  are  several  advantages  with  this  approach.   First,  the dependency parser can be trained on a training set much larger than the training set for the tree-to-graph algorithm, resulting in a more accurate AMR parser overall.  Our parser yields an improvement of 5% absolute in F-measure over the best previous result.  Second, the actions that we design are linguistically intuitive and capture the regularities in the mapping between the dependency structure and the AMR of a sentence.  Third, our parser runs in nearly linear time in practice in spite of a worst-case complexity of O(n2)
+      - Status :: skimmed
+* Semantic Parsing
+
+  + Universal Semantic Parsing
+    - Abstract :: Universal Dependencies (UD) offer a uniform cross-lingual syntactic representation, with the aim of advancing multilingual applications.    Recent  work  shows  that  semantic  parsing  can  be  accomplished  by transforming syntactic dependencies to logical  forms.   However,  this  work  is  limited  to  English,  and  cannot  process  dependency  graphs,  which  allow  handling complex phenomena such as control.  In this work,  we introduce UDEPLAMBDA, a semantic interface for UD, which maps natural  language  to  logical  forms  in  an almost language-independent fashion and can process dependency graphs.  We perform experiments on question answering against Freebase and provide German and Spanish translations of the WebQuestions and GraphQuestions datasets to facilitate multilingual evaluation. Results show that UDEPLAMBDA outperforms strong baselines across languages and datasets.  For English, it achieves a 4.9 F1 point improvement  over  the  state-of-the-art  on  Graph-Questions.
+    - Status :: not-read
+
+  + Transforming Dependency Structures to Logical Forms for Semantic Parsing
+    - Abstract :: The  strongly  typed  syntax  of  grammar  formalisms such as CCG, TAG, LFG and HPSG offers a synchronous framework for deriving syntactic structures and semantic logical forms. In contrast—partly due to the lack of a strong type system—dependency structures are easy to annotate and have become a widely used form of syntactic analysis for many languages. However, the lack of a type system makes a formal mechanism for deriving logical forms from dependency structures challenging.  We address  this  by  introducing  a  robust  system based on the lambda calculus for deriving neo-Davidsonian logical forms from dependency trees.  These logical forms are then used for semantic parsing of natural language to Free- base.  Experiments on the Free917 and Web-Questions datasets show that our representation is superior to the original dependency trees and that it outperforms a CCG-based representation on this task. Compared to prior work, we obtain the strongest result to date on Free917 and competitive results on WebQuestions
+    - Status :: not-read
+
+* Keyphrase Extraction
+
+  + 

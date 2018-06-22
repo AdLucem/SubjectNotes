@@ -1,0 +1,59 @@
+#+TITLE: Semantic Representations
+#+AUTHOR: CL
+
+So this is a writeup- or rather, a set of writeups- on semantic representations. Mostly to keep us doing the actual reading, it helps to have some concrete marker of progress in the case of a writeup.
+
+* Semantic Representation Systems looked at so far
+
+The two types of semantic representation systems we've looked at so far are:
+
+** AMR
+
+Writeup here: file:AMR/notes_on_amr_paper.org
+
+Conclusion after discussion with advisor: has all the disadvantages of an inherently rule-based (or well, annotation-based) semantic representation- you're never going to get enough annotation, or enough categories.
+
+Distributional semantics avoids this pitfall by working from the pure unstructured text itself.
+
+Can we make a semantic representation system that somehow "combines" both the features of distributional semantics (a thing is meaningful only with respect to its context) and compositional semantics (smaller things have meanings, smaller things combine together into bigger things which have different meanings)?
+
+** ELMO 
+
+=NEED TO LOOK AT=
+* Semantic Representation Schemes
+
+** Semantic Role Labelling
+
+Pretty self-explanatory.
+
+This is not one scheme so much as a set of schemes, all based on the idea of 'semantic roles', i.e: the categories of arguments a particular object (mostly a verb) takes.
+
+    - most SRL schemes define their annotation relative to syntactic structure
+    - which brings up an interesting point: the correspondences between syntax and semantics?
+Note from the nonverbal side: 
+# splitting up talk - semantic roles - into - helps! - (meaning - understand)!
+# As in, splitting up an utterance into the 'head' and its arguments, with associated semantic roles, is a good way for nonverbal!brain to understand meaning
+** AMR
+
+Abstract meaning representation. Already looked at this.
+
+** UCCA
+
+Universal Conceptual Cognitive Annotation
+
+** UDS
+
+Universal Decompositional Semantics
+
+** Prague Dependency Treebank Tectogrammatical Layer  
+** Don't Deserve Much Examination? (Why?)
+
+(Why?) Perhaps because very tied to syntax, running into problems when you have similar syntax for multiple different meanings/ same meaning expressed through different syntactic schemes?
+
+(But at some point, is not semantics tied to syntax?)
+
+*** CCG-Based Schemes
+
+*** HPSG-Based Schemes
+
+*** OntoNotes
