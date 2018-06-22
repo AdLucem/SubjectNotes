@@ -2,7 +2,12 @@
 
 An ordered repository of papers I've read/am intending to read/considered.
 
+* Computer Science Base
 
+** Deep Learning
+
+   + Long Short-Term Memory
+     - Status :: to-read
 * Can't Decide The Category
 
   + Parsing Graphs With Hyperedge Replacement Grammars
@@ -12,6 +17,10 @@ An ordered repository of papers I've read/am intending to read/considered.
   + Enriching Word Vectors With Subword Information
     - Abstract :: Continuous word representations, trained on large unlabeled corpora are useful for many natural language processing tasks. Popular models that learn such representations ignore the morphology of words, by assigning a distinct vector to each word. This is a limitation,
 especially for languages with large vocabularies and many rare words. In this paper, we propose a new approach based on the skipgram model, where each word is represented as a bag of character n-grams. A vector representation is associated to each character n-gram; words being represented as the sum of these representations. Our method is fast, allowing to train models on large corpora quickly and allows us to compute word representations for words that did not appear in the training data. We evaluate our word representations on nine different languages, both on word similarity and analogy tasks. By comparing to recently proposed morphological word representations, we show that our vectors achieve state-of-the-art performance on these tasks.
+    - Status :: not-read
+
+  + Natural Language Processing (Almost) From Scratch
+    - Abstract :: We propose a unified neural network architecture and learning algorithm that can be applied to various natural language processing tasks including part-of-speech tagging, chunking, named entity recognition, and semantic role labeling. This versatility is achieved by trying to avoid task-specific engineering and therefore disregarding a lot of prior knowledge.  Instead of exploiting man-made input features carefully optimized for each task, our system learns internal representations on the basis of vast amounts of mostly unlabeled training data.   This work is then used as a basis for building a freely available tagging system with good performance and minimal computational requirements.
     - Status :: not-read
  
 * Rule Mining
@@ -30,14 +39,18 @@ performance without using any language specific linguistic information. We note 
 
 ** Question-Answering Sytems
 
-   + Hand in Glove: Deep Feature Fusion Network Architectures for Answer Quality Prediction in Community Question Answering
+  + Hand in Glove: Deep Feature Fusion Network Architectures for Answer Quality Prediction in Community Question Answering
      - Abstract :: Community Question Answering (cQA) forums have become a popular medium for soliciting answers to specific user questions from experts and experienced users in a given topic. However, for  a  given  question,  users  sometimes  have  to  sift  through  a  large  number  of  low-quality  or irrelevant answers to find out the answer which satisfies their information need. To alleviate this, the problem of Answer Quality Prediction (AQP) aims to predict the quality of an answer posted in response to a forum question.  Current AQP systems either learn models using - a) various hand-crafted features (HCF) or b) Deep Learning (DL) techniques which automatically learn the feature representations. In this paper, we propose a novel approach for AQP known as - “Deep Feature Fusion Network (DFFN)” which combines the advantages of both hand-crafted features and deep learning based systems.  Given a question-answer pair along with its metadata, a DFFN architecture independently - a) learns features using the Deep Neural Network (DNN) and b) computes hand-crafted features leveraging various external resources and then combines them using a fully connected neural network trained to predict the quality of the given answer.  DFFN is an end-end differentiable model and trained as a single system. We propose two different DFFN architectures which vary mainly in the way they model the input question/answer pair - a) DFFN-CNN which uses a Convolutional Neural Network (CNN) and b) DFFN-BLNA which uses a Bi-directional LSTM with Neural Attention (BLNA). Both these proposed variants of DFFN (DFFN-CNN and DFFN-BLNA) achieve state-of-the-art performance on the standard SemEval-2015 and SemEval-2016 benchmark datasets and outperforms baseline approaches which individually employ either HCF or DL based techniques alone.
     - Status :: skimmed
 
-   + Together We Stand: Siamese Networks for Similar Question Retrieval
+  + Together We Stand: Siamese Networks for Similar Question Retrieval
      - Abstract :: Community  Question  Answering  (cQA) services  like  Yahoo! Answers,  Baidu Zhidao,   Quora,   StackOverflow etc. provide  a  platform  for  interaction  with experts  and  help  users  to  obtain  precise and  accurate  answers  to  their  questions. The  time  lag  between  the  user  posting  a question  and  receiving  its  answer  could be  reduced  by  retrieving  similar  historic questions  from  the  cQA  archives. The main challenge in this task is the “lexico- syntactic” gap between the current and the previous questions.  In this paper, we propose  a  novel  approach  called “Siamese Convolutional Neural Network for cQA (SCQA)” to  find  the  semantic  similarity between the current and the archived questions. SCQA  consist  of  twin  convolutional neural networks with shared parameters and a contrastive loss function joining them. SCQA  learns  the  similarity  metric  for question-question pairs by leveraging the question-answer pairs available in cQA forum archives. The model projects semantically similar question pairs nearer to each other  and  dissimilar  question  pairs  farther away from each other in the semantic space. Experiments on large scale real-life “Yahoo! Answers” dataset reveals that SCQA  outperforms  current  state-of-the-art approaches based on translation models, topic models and deep neural network based  models  which  use  non-shared  parameters.
     - Status :: skimmed
- 
+
+  + Simple and Effective Multi-Paragraph Reading Comprehension
+    - Abstract :: We consider the problem of adapting neural paragraph-level question answering models to the case where entire documents are given as input. Our proposed solution trains models to produce well calibrated confidence scores for their results on individual paragraphs. We sample multiple paragraphs from the documents during training, and use a shared-normalization training objective that encourages the model to produce globally correct output. We combine this method with a state-of-the-art pipeline for training models on document QA data. Experiments demonstrate strong performance on several document QA datasets. Overall, we are able to achieve a score of 71.3 F1 on the web portion of TriviaQA, a large improvement from the 56.7 F1 of the previous best system. 
+    - Status :: not-read
+
 ** Query Parsing
 
    + Syntactic Parsing of Web Queries With Question Intent
@@ -45,6 +58,11 @@ performance without using any language specific linguistic information. We note 
     - Status :: read
 
 * Semantic Representations
+
+** General
+
+   + State of the Art in Semantic Representation
+     - Status :: read
 
 ** AMR
 
@@ -60,9 +78,15 @@ performance without using any language specific linguistic information. We note 
    + Deep Contextualised Word Representations
      - Abstract :: We introduce a new type of deep contextualized word representation that models both (1) complex characteristics of word use (e.g., syntax and semantics), and (2) how these uses vary across linguistic contexts (i.e., to model polysemy). Our word vectors are learned func-
 tions of the internal states of a deep bidirectional language model (biLM), which is pretrained on a large text corpus. We show that these representations can be easily added to existing models and significantly improve the state of the art across six challenging NLP problems, including question answering, textual entailment and sentiment analysis. We also present an analysis showing that exposing the deep internals of the pre-trained network is crucial, allowing downstream models to mix different types of semi-supervision signals.
-    - Status :: not-read
+    - Status :: to-read
+
+** SRL
+
+   + Deep Semantic Role Labelling: What Works and What's Next
+     - Status :: to-read
 
 * Semantic Parsing
+
 
   + Universal Semantic Parsing
     - Abstract :: Universal Dependencies (UD) offer a uniform cross-lingual syntactic representation, with the aim of advancing multilingual applications.    Recent  work  shows  that  semantic  parsing  can  be  accomplished  by transforming syntactic dependencies to logical  forms.   However,  this  work  is  limited  to  English,  and  cannot  process  dependency  graphs,  which  allow  handling complex phenomena such as control.  In this work,  we introduce UDEPLAMBDA, a semantic interface for UD, which maps natural  language  to  logical  forms  in  an almost language-independent fashion and can process dependency graphs.  We perform experiments on question answering against Freebase and provide German and Spanish translations of the WebQuestions and GraphQuestions datasets to facilitate multilingual evaluation. Results show that UDEPLAMBDA outperforms strong baselines across languages and datasets.  For English, it achieves a 4.9 F1 point improvement  over  the  state-of-the-art  on  Graph-Questions.
