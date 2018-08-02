@@ -1,0 +1,74 @@
+#+TITLE: Language Typology and Universals: Introductory Class
+#+AUTHOR: Atreyee Ghosal
+
+The central questions that we started by discussing are:
+
+(1) What is language?
+(2) What is linguistics?
+(3) What is applied linguistics?
+
+* Language
+
+** What makes linguistics a science?
+
+"We have a hypothesis in mind; then, with evidence, it can be proved or disproved."
+
+** Linguistics- more of a math/CS field, than a natural science field?
+
+This was my question.
+
+Answer:
+There are different methods in the subfields of linguistics:
+
+- Structuralist
+- Deconstructive
+
+... etc.. Thus, not all fields of linguistics follow the patterns of math/CS research. For example, sociolinguistics- it's a hypothesis/data-based field.
+
+** Breaking Down Language
+
+We break down language into phonetics, phonology, syntax etc., but this is only for convenience of study. Each subfield of language is actually dependent on each other.
+
+** What is applied linguistics?
+
+"Some applied linguists consider language teaching as the only applied linguistics phenomena. But however, other linguists consider everything that applies linguistics- socio, computational, etc- as a valid application of linguistics."
+
+So, applied linguistics can be either- according to the perspective:
+
+    - Language teaching and learning
+    - Subfields of linguistics- psycholinguistics, NLP and AI and linguistics, etc.
+
+** Translation
+
+An area of applied linguistics.
+
+** Lexicography
+
+Dictionary-making- is also applied linguistics.
+
+(Note- you won't find pragmatics in dictionaries. lol)
+* Typology
+
+Morphology: /type/ and /logos/
+
+# typo-ology. lel
+
+** Competence and Performance
+   
+Always remember the distinction.
+
+"We might make errors in our performance, but our competence should be correct." - Prof. Radhika Mamidi, 2k18
+
+An example of competence vs. performance- when we write (performance), we go back and correct it according to our correct knowledge of the language (competence).
+
+** Communicative Competence
+
+** Type-
+
+# Not to be confused with type theory.
+
+Note: indo-aryan language spoken in the southern part of india- ????
+
+Okay, languages have differences. Based on these differences, we're categorizing them. We're grouping them according to similarities.
+
+Exercise done in class: categorizing the set of languages spoken by students in this class, into a number of classes. (Most of the class categorized based on language families.) 
