@@ -78,12 +78,18 @@ performance without using any language specific linguistic information. We note 
    + Deep Contextualised Word Representations
      - Abstract :: We introduce a new type of deep contextualized word representation that models both (1) complex characteristics of word use (e.g., syntax and semantics), and (2) how these uses vary across linguistic contexts (i.e., to model polysemy). Our word vectors are learned func-
 tions of the internal states of a deep bidirectional language model (biLM), which is pretrained on a large text corpus. We show that these representations can be easily added to existing models and significantly improve the state of the art across six challenging NLP problems, including question answering, textual entailment and sentiment analysis. We also present an analysis showing that exposing the deep internals of the pre-trained network is crucial, allowing downstream models to mix different types of semi-supervision signals.
-    - Status :: to-read
+    - Status :: read
 
 ** SRL
 
    + Deep Semantic Role Labelling: What Works and What's Next
      - Status :: to-read
+
+** UDS
+
+   + Universal Decomposition Semantics on Universal Dependencies
+     - Abstract :: We present a framework for augmenting data sets from the Universal Dependencies project with Universal Decompositional Semantics. Where  the  Universal  Dependencies  project aims  to  provide  a  syntactic  annotation  standard that can be used consistently across many languages  as  well  as  a  collection  of  corpora that use that standard, our extension has similar aims for semantic annotation. We describe results  from  annotating  the  English  Universal Dependencies treebank, dealing with word senses, semantic roles, and event properties.
+    - Status :: read
 
 * Semantic Parsing
 
