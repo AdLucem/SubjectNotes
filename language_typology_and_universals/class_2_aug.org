@@ -1,0 +1,79 @@
+#+TITLE: Language And Typology- 2nd Class
+#+AUTHOR: Atreyee Ghosal
+
+* Administrivia
+
+Grading: 
+40% - final
+30% - midsems (15 + 15)
+30% - Assessment
+    -> Classroom participation
+    -> assignments
+    -> presentations/term paper
+
+* Universals
+
+Features that are common in all languages.
+
+Commonalities in the languages we know: (suggested by class) verbs, nouns
+
+** Activity: Translation
+
+We sit in twos. One's partner and oneself writes a story in english. Then, the other person translates it to a language that they are comfortable with.
+
+** Adverbs
+
+Some languages may have no adverbs, but they have suffixes or affixes that play the adverbial role. Eg: in english, adverbalisation = adjective + "ly". Selectional conditions apply.
+
+In hindi: happy and happily -> "khush" and "khushi se" 
+
+What we've done: we've written a creative text, and now we're converting it into a translated text.
+
+Original: *Source Text* in *Source Language* 
+The final: *Translated text* in *target language*
+
+*** Analysis
+
+    - Compare the source text and translated text
+    - Challenges we face:
+    - Differences in vocabulary: not a problem from english to french frequently, as one has borrowed a lot of words from the other
+      - "to have X years" ("elle a deux yeux")
+    - Syntactic analysis
+    - Semantic analysis. Example: "ghatna" vs "event" - you can say "two friends saw an event", but you cannot say that "do mitro ne ek ghatna dekhi" =Am I correct?= 
+
+* Differentiators
+
+Features that are common across all languages.
+
+** About Articles
+
+English- a, an, the
+French: le, la, l', les, un, une, des
+Hindi: 'that', 'one' : "the boy" --> "ek ladka"
+                       "that boy" --> "vaha ladka"
+
+** About Pronouns
+
+The kinds of pronouns in english: personal pronouns, personal possessive, relative, interrogative, demonstrative
+
+** Cases
+
+(discussion shifts to cases)
+
+We have cases- karta, karan, adhikaran, sampradan, etc- and then we have case markers.
+
+Case markers in english are not visible
+
+Cases markers in hindi are visible. Thus, NPs are more easily moved around in languages that have visible case markers.
+
+** Verbs- Transitive and Intransitive
+
+# for some reason we brought up transitivity, ditransitivity and selectional restraints
+# rehashing argument structure of verbs, and the fact that verbs have argument structure
+# and we still don't have a solid theory of how to generalise argument structure across languages?
+# also also- arguments that are elided in verbs are still "inherent" via context information
+# blah blah the world knowledge problem.
+note: most of the time in conversation, objects are omitted. (does this work across languages?)
+* Homework
+
+Do the translation and analyse it.

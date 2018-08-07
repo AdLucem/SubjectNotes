@@ -1,0 +1,37 @@
+#+TITLE: Meaning Representation, And An Introduction to Montague Semantics
+#+AUTHOR: Atreyee Ghosal
+
+* Why Do We Need Semantic Representations
+
+The phonological, morphological and syntactic representations that we have studied so far do not work for certain semantic tasks, like:
+
+(1) Inference
+(2) Question answering
+(3) Using natural language instructions to execute programs
+
+Thus, we need semantic representations- representations that link the linguistic elements present in the texts to the /meaning/ thereof.
+
+** WordNet
+** FrameNet
+* A Semantic Representation Framework Should Be
+
+** Verifiable
+** Unambiguous
+
+This presents a problem as we're trying to map from the inherent ambiguity of language to an unambiguous representation.
+
+# probabilistic semantic representations?
+** Canonical Form
+
+A single canonical form for multiple surface forms.
+** Expressiveness
+** Inference and Variables
+* Meaning Structure of Language
+
+** Predicate-Argument Structure
+* Model-Theoretic Semantics
+
+#+BEGIN_QUOTE
+objects, properties of objects, and relations among objects
+
+#+END_QUOTE
