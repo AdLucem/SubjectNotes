@@ -1,7 +1,7 @@
-#+TITLE: Meaning Representation, And An Introduction to Montague Semantics
+#+TITLE: Meaning Representations
 #+AUTHOR: Atreyee Ghosal
 
-* Why Do We Need Semantic Representations
+* Why Do We Need Decent Semantic Representations?
 
 The phonological, morphological and syntactic representations that we have studied so far do not work for certain semantic tasks, like:
 
@@ -11,8 +11,22 @@ The phonological, morphological and syntactic representations that we have studi
 
 Thus, we need semantic representations- representations that link the linguistic elements present in the texts to the /meaning/ thereof.
 
-** WordNet
-** FrameNet
+** Semantic Analysis
+
+The process whereby we map language input to some sort of meaning structure.
+
+** Existing Meaning Representation Systems
+
+*** First-Order Logic
+*** Semantic Network
+*** Conceptual Dependency
+*** Frame-Based Representations
+*** Event Semantics... ?
+
+** Existing Computational Semantic Representation Systems
+
+*** WordNet
+*** FrameNet
 * A Semantic Representation Framework Should Be
 
 ** Verifiable
@@ -26,12 +40,27 @@ This presents a problem as we're trying to map from the inherent ambiguity of la
 A single canonical form for multiple surface forms.
 ** Expressiveness
 ** Inference and Variables
-* Meaning Structure of Language
-
-** Predicate-Argument Structure
+* The /Literal Meaning/ Shortcoming
 * Model-Theoretic Semantics
 
 #+BEGIN_QUOTE
 objects, properties of objects, and relations among objects
 
 #+END_QUOTE
+
+** Model
+
+#+BEGIN_QUOTE
+A formal construct that stands for the state of affairs in the world that we're trying to represent.
+
+#+END_QUOTE
+** Terminology of a Model
+
+   - Non-Logical Vocabulary :: labels/names for objects in the world
+   - Logical Vocabulary :: symbols, quantifiers, links, keywords, et cetera that compose and operate on the expressions
+   - Denotation :: every element of the non-logical vocabulary *denotes*, i.e: corresponds to a fixed and well-defined part of the model
+   - Domain Of A Model :: all the objects being represented/thought of 
+   - Intentional :: properties are defined by features an object must have to fit that property (necessary&sufficient conditions)
+   - Extensional :: properties are defined by sets of objects grouped together
+
+** Truth-Conditional Semantics

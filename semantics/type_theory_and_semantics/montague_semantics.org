@@ -1,5 +1,198 @@
 #+TITLE: Montague Semantics
 #+AUTHOR: Atreyee Ghosal
 
-* Typed Lambda Calculus and Possible-Worlds Models
 
+The basic principle of Montague semantics is this: the syntax of a language is an algebra, the semantics is an algebra, and there is a homomorphism mapping elements of the syntactic algebra to the semantic algebra.
+
+Montague's (slightly wrong) views:
+
+#+BEGIN_QUOTE
+There is in my opinion no important theoretical difference between natural languages and the artificial languages of logicians; indeed I consider it possible to comprehend the syntax and semantics of both kinds of languages with a single natural and mathematically precise theory.
+#+END_QUOTE
+
+* Frege's Principle: Compositionality
+
+This interpretation is a necessary constraint on both the syntactic and semantic algebras of a language.
+
+#+BEGIN_QUOTE
+The Principle of Compositionality:
+The meaning of a complex expression is a function of the meanings
+of its parts and of the way they are syntactically combined.
+
+#+END_QUOTE
+
+It is to be noted that "syntactically combined" need not refer directly to the surface-level syntax of a language; it can be an intermediate logical/semantic representation language that stands in between the surface structure of an utterance and its meaning.
+
+Example: phrase structure trees- the individual nodes and the way they are combined in the graph gives us the meaning of a sentence. Also, on the same principle: dependency trees- the nodes are objects and their arc labels syntactically combine them.
+
+** Compositionality For Syntax
+
+#+BEGIN_QUOTE
+
+Syntactic Rule n:
+If α is a well-formed expression of category A and β is a well-formed
+expression of category B, then γ is a well-formed expression of
+category C, where γ = F i (α, β).
+
+In such a rule, F i is a syntactic operation; it may be as simple as concatenation or, as far as the requirements of UG are concerned, arbitrarily complex and not even necessarily computable. It is the job of a linguistic theory of syntax to put further requirements on the nature of syntactic categories and syntactic operations.
+
+#+END_QUOTE
+
+** Compositionality For Semantics
+
+#+BEGIN_QUOTE
+Semantic Rule n:
+If α is interpreted as α 0 and β is interpreted as β 0 , then γ is interpreted as γ 0 , where γ 0 = G k (α 0 , β 0 ). 
+
+In such a rule, G k is a semantic operation; in typical examples it may be something like function-argument application, set intersection, or function composition, though that too is totally unconstrained by the theory of UG; it is up to a linguistic theory of semantics to specify the available semantic operations and any formal or substantive constraints on which semantic operations are used in the interpretation of which syntactic constructions.
+
+#+END_QUOTE
+* Requirements For Syntactic and Semantic Algebras
+
+** Syntactic Algebra: Basically A Formal Language?
+#+BEGIN_QUOTE
+
+The syntactic algebra contains elements (expressions) and operations which apply to tuples of expressions to yield other expressions; the language, in the simplest case, is the set of all expressions which can be formed by starting from some basic expressions (the generators of the algebra) and applying operations in all possible ways; that
+is, it is the closure of the generator set under the operations of the algebra. 
+#+END_QUOTE
+
+In practice, of course, there are syntactic and semantic constraints on which operators can be applied to which elements. See: selectional restrictions.
+
+** Properties of the Algebra
+
+*** Syntactic to Semantic: Many-To-One Relation
+
+To deal with the fact that several syntactic structures can, in essence, express the same meaning. Consider: "Siddharth's cat" vs. "The cat that belongs to Siddharth".
+
+#+BEGIN_QUOTE
+
+The homomorphism requirement is the compositionality requirement (more below); the fact that it is a homomorphism requirement and not an isomorphism requirement means that distinct syntactic expressions may
+have the same meaning, but each syntactic expression must have only one meaning.
+
+The requirement is thus that there be a many-one relationship between expressions and meanings and not a requirement of a one-one relationship, although the compositionality requirement has sometimes mistakenly been described this way.
+
+#+END_QUOTE
+
+*** We Don't Care About Your Units (As Long as They're Fregean)
+
+**** We Don't Care About Your Syntactic Units (But They Could Be Trees)
+
+#+BEGIN_QUOTE
+
+This very general definition leaves a great deal of freedom as to what sorts of things the elements and the operations of these algebras are. As for the syntactic algebra, in the case of a typical logical language the elements can be the well-formed expressions, but in the case of a natural language, ambiguity makes that impossible, since the homomorphism requirement means that each element of the syntactic algebra must be mapped onto a unique element of the semantic algebra 12 (the shorthand terminology for this is that the syntax must provide a “disambiguated language”). In the PTQ grammar for a fragment of English, the syntax is not explicitly presented as an algebra, but could be transformed into one; the elements of the syntactic algebra could not be the expressions, since many are ambiguous, but could be the analysis trees.
+
+#+END_QUOTE
+
+**** We Don't Care About Your Semantic Units (Except When We Do)
+
+#+BEGIN_QUOTE
+The choice for the semantic elements is totally free, as long as they make up an algebra, i.e. as long as there is a well-defined set of elements and well-defined operations that have elements of the algebra as operands and values. The semantic elements, or “semantic values” as they are often called, could be taken to be the model-theoretic
+constructs of possible-worlds semantics as in Montague’s fragments of English and most “classical” formal semantics, or the file change potentials of Heim (1982), or the game strategies of game-theoretical semantics, or the simple extensional domains of first-order logic, or hypothesized psychological concepts, or expressions in a “language of thought”, or bundles of features, or anything else; what is constrained is not the “substance” of the semantics but some properties of its structure and of its relation to syntactic structure.
+
+#+END_QUOTE
+*** Montague and Ambiguity
+
+#+BEGIN_QUOTE
+
+Montague allows for the grammar to include an “ambiguating rela-
+tion” mapping elements of the syntactic algebra onto the actual (“surface”) expressions of the language; as McCawley (1979) notes, if it were the case that a generative semantics deep structure were the right level to interpret compositionally, the entire transformational component mapping deep structures onto surface structures (plus a tree-
+wipeout rule to yield surface strings) could be the description of such an ambiguating relation.
+
+#+END_QUOTE
+
+*** Homomorphism And Semantically Ambiguous Expressions: We Ship Them
+
+#+BEGIN_QUOTE
+
+Actually, there is a way of respecting the homomorphism requirement while working with semantically ambiguous expressions. It is standard in mathematics to turn a (one-many) relation into a function by
+making it a set-valued function. This method is employed, for instance, by Cooper (1975), who takes “sets of (standard) meanings” as the semantic objects, mapping each (possibly ambiguous) linguistic
+expression onto the semantic object which consists of all of its possible meanings; not all kinds of ambiguity are amenable in a natural way to this kind of treatment, but Cooper’s device of “quantifier storage” for handling scope ambiguities for which there is no independent evidence of syntactic ambiguities is one of the serious options in this domain. The same general strategy for working directly with ambiguous expressions is employed by Hendriks (1988, 1993) to deal with the multiplicity of readings made available by type-lifting principles and in Rosetta (1994) to turn translations from English into Dutch and
+The choice for the semantic elements is totally free, as long as they make up an
+algebra, i.e. as long as there is a well-defined set of elements and well-defined opera-
+tions that have elements of the algebra as operands and values. The semantic elements,
+or “semantic values” as they are often called, could be taken to be the model-theoretic
+constructs of possible-worlds semantics as in Montague’s fragments of English and
+most “classical” formal semantics, or the file change potentials of Heim (1982), or
+the game strategies of game-theoretical semantics, or the simple extensional domains
+of first-order logic, or hypothesized psychological concepts, or expressions in a “lan-
+guage of thought”, or bundles of features, or anything else; what is constrained is not
+the “substance” of the semantics but some properties of its structure and of its relation
+to syntactic structure.
+While there is no direct constraint on the kinds of things that make up the elements
+of a semantic algebra, there is nevertheless a further requirement that relates to truth
+conditions. An important guiding principle of the UG framework and at the heart of
+Montague’s semantics, inherited from the traditions of logic and model theory and
+transmitted as one of the defining principles of formal semantics, is the principle that
+truth conditions and entailment relations are the basic semantic data, the phenomena
+that have to be accounted for to reach a minimal level of adequacy. Although UG gives
+a very unconstrained specification of the notion of a semantic algebra, under the head-
+ing “Theory of Meaning”, it also provides, under the heading “Theory of Reference”,
+a specification of the notion of a “Fregean interpretation”; a semantic algebra cannot
+form part of a Fregean interpretation unless it can be connected to an assignment of
+truth conditions in a specified way. An algebra whose elements were expressions in a
+“language of thought” would probably not directly be construable as properly semantic
+in that stronger sense and would probably fit better into the category of “intermediate
+language” in the sense of Section 1.3.2 below. The same is undoubtedly true a for-
+tiori of a linguistic representational level such as the level of “LF” in a contemporary
+Chomskyan framework.
+#+END_QUOTE
+
+* Model Theoretic Semantics
+
+A "model" is a space within which we interpret an expression. If expression =E= is interpreted within model =M= to be true, then we say that =M= is a model of =E=. For example:
+
+E :: "Alice is a cat."
+
+Model M1: Alice belongs to the set of Cats.
+Model M2: Alice belongs to both the set of Cats and Dogs
+Model M3: Alice does not belong to the set of Cats.
+
+M1 and M2 would be a model of E, while M3 would not.
+
+#+BEGIN_QUOTE
+Montague semantics is not interested in a particular situation (e.g. the real world) but in semantical properties of language. When formalizing such properties, reference to a class of models has to be made, and therefore the interpretation of a language will be defined with respect to a set of (suitable) models. For example, in the introduction we mentioned that the characterization of entailment was a basic goal of semantics. That notion is defined as follows. Sentence A entails sentence B if in all models in which the interpretation of A is true, also the interpretation of B is true. Likewise a tautology is true in all models, and a contradiction is true in no model.
+#+END_QUOTE
+
+** Direct And Indirect Interpretations
+
+*** Direct Interpretation 
+
+Syntactic Algebra --[homomorphic mapping]--> Semantic Algebra
+
+*** Indirect Interpretation
+
+(Grammatical Framework attempts to do this.)
+(Also useful for machine translation- interlingua)
+
+Syntactic Algebra --[homomorphic mapping]--> Intermediate Language's Syntactic Algebra --[homomorphic mapping]--> Semantic Algebra
+
+Generalize the above for ~n~ intermediate languages.
+* Intensionality
+
+#+BEGIN_QUOTE
+Montague defined the denotation of a sentence as a function from possible worlds and moments of time to truth values. Such a function is called an ‘intension’. As he said (Montague 1970a, 218), this made it possible to deal with the semantics of common phenomena such as modifiers, e.g. in Necessarily the father of Cain is Adam. Its denotation cannot be obtained from the truth value of The father of Cain is Adam : one has to know the truth value for other possible worlds and moments of time. The intensional approach also made it possible to deal with several classical puzzles. Two examples from Montague 1973 are: The temperature is rising, which should not be analyzed as stating that some number is rising. And John wishes to catch a fish and eat it should not be analyzed as stating that John has a particular fish in mind, but that he wants to eat the fish he will catch.
+#+END_QUOTE
+
+** Criticisms of Intensional Semantics: All Tautologies Are True
+
+#+BEGIN_QUOTE
+Intensional semantics has been criticized for the fact that all tautologies get the same meaning (are synonymous). Indeed, a tautology as John is ill or he is not ill gets as intension the function that constantly yields true, and the same holds for other tautologies.
+#+END_QUOTE
+
+* Type Theories In Montague Semantics
+
+#+BEGIN_QUOTE
+Montague did not present exactly the same type theory in all of his work, but the different systems are similar. What all type theories have in common is some selection of primitive types, some means for defining non-primitive types and a model-theoretic interpretation of the basic types and of the defined types.
+
+#+END_QUOTE
+
+** Basic Type Theory: /e/ and /t/
+
+#+BEGIN_QUOTE
+
+Montague usually took as his primitive types the two types e and t, and his defined types always included some kinds of functional types and sometimes included a particular device for forming intensional types.
+#+END_QUOTE
+
+* Questions
+
+  - What does the book mean by "functional types" and "intensional types"?
