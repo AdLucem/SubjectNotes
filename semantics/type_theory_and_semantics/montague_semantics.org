@@ -196,3 +196,6 @@ Montague usually took as his primitive types the two types e and t, and his defi
 * Questions
 
   - What does the book mean by "functional types" and "intensional types"?
+  - I really, really did not understand the section about type theory in montague semantics. Can we go over it again?
+  - Future: there is a paper on distributional compositional semantics that I really want to read
+  - I really, *Really* did not understand that bit about intensionality

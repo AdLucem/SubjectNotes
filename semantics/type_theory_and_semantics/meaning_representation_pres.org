@@ -21,7 +21,6 @@ The process whereby we map language input to some sort of meaning structure.
 *** Semantic Network
 *** Conceptual Dependency
 *** Frame-Based Representations
-*** Event Semantics... ?
 
 ** Existing Computational Semantic Representation Systems
 
