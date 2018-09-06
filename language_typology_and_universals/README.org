@@ -12,14 +12,10 @@ Here is an outline of the notes and topics taught:
 
 * The Two Approaches to Language
 
-  - [[class_7_aug.org][The Two Approaches. Also a list of the readings presented]]
+ [[file:class_7_aug.org][The Two Approaches. Also a list of the readings presented]]
 * Neurolinguistics
 
   - [[class_17_aug.org][Language and the Brain]]
-* Language Acquisition In Children
-
-  - [[language_acquisition_steven_pinker.org][Steven Pinker's Viewpoint]]
-
 * Universals
 
 ** Color Term Theory

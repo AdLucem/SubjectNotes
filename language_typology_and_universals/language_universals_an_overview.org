@@ -1,0 +1,116 @@
+#+TITLE: Language Universals: An Overview
+#+AUTHOR: Atreyee Ghosal
+
+* Approaches to Language Universals
+
+
+Approaches to study language typology and universals.
+
+** Greenberg
+
+   + Data Size :: large- the latest studies in the Greenbergian approach studied more than 300 languages
+   + Depth ::
+              - Surface study
+              - Stated universals in terms of concrete aspects of languages- i.e: "surface", "visible" aspects
+   + Perspective on Language ::
+     - Comparative study of languages
+     - Behaviourism: language universals can be explained by psychological and functional/behavioral factors
+     - Learning from the environment
+
+** Chomskyan
+
+   + Data size :: small number of languages
+   + Depth :: detailed and abstract study
+              - Differentiates between *surface* and *deep* structure of language
+   + Perspective on Language ::
+     - Mentalism : language is an inherent property of the human brain
+     - Genetically acquired property- the inherent "language instinct"
+     - Language acquisition: language is acquired, not learned
+     - A Contested Claim: Only one language is acquired from childhood (for criticisms, see notes on language acquisition among bilingual children)
+
+   - Used only one language as data (english), and studied it deeply
+
+*** Surface Structure and Deep Structure
+
+    - Sentences are stored as deep structures
+    - Transformation rules convert deep structures to surface structures
+
+*** Acquisition vs. Learning
+
+Is there a difference?
+
+Acquisition: kind of like a bird building a nest- some properties of language that one is born with.
+    - The speed at which acquisition happens is much faster than the speed at which learning happens
+    - acquisition does not focus so much on grammatical fundamentals
+
+Learning: teaching-based
+
+In the chomskyian perspective, we use the word "acquisition" for the first language a child learns- er, acquired.
+
+Second language onwards, we use the term "learning". Learning may be formal, or from friends, et cetera..
+
+* Classification of Language Universals
+
+** Formal vs. Substantiative
+
+*** Substantiative
+
+Categories, the existence of things across all languages, or in other words- what all /necessarily exists/ across all languages. Example: categories like nouns and verbs, phonemic distinctive features, etc.
+
+*** Formal
+
+The formal set of grammatical rules that are universal across all languages.
+
+** Implicational vs. Non-Implicational
+   
+*** Implicational
+
+UNIVERSAL RULE: IF property_Y is present, THEN property_X must also be present
+
+Eg: 
+(1) if a language has first/second person reflexive pronouns, then it also has third person reflexive pronouns.
+(2) if there are 3 vowels in a language, they must be /i/, /e/ and /o/
+
+*** Non-Implicational 
+
+UNIVERSAL RULE: property_Y is present in all languages regardless of any other given properties
+
+Eg: 
+(1) There must be a minimal number of vowels present in every language
+ 
+** Absolute vs. Tendencies
+
+*** Absolute
+
+Exist in all languages, no exceptions.
+Eg: 
+    - Absolute non-implicational: all languages have vowels
+    - Absolute implicational: if a language has first/second reflexive pronouns, it has third person reflexive pronouns
+
+*** Tendencies
+
+Exist in /most/ languages, or are statistically likely to exist in languages, but with exceptions.
+
+Eg:
+    - Implicational tendency: if a language has (unmarked) SOV word order, it will probably have postpositions. Exception: Persian.
+    - Non-Implicational Tendency: nearly all languages have nasal consonants. Exception: some Salishan languages.
+
+* Explanations for Language Universals
+
+** Common Genetic Origin? Nope
+
+   + Hypothesis :: if all languages have a common ancestor, then the universals are simply the properties of that common ancestor, that the descendant languages have retained without any change. (Already the problems in this explanation are apparent.)
+   + Problems ::
+                 - Untestable, unverifiable: the time passed between the existence of the hypothetical proto-language and current languages is simply too great to reconstruct the proto-language
+                 - Not all universals are applicable to every single language (i.e: not all universals are of the form "every single language has X property."). For example: implicational universals are of the form "if exists_property(X), then exists_property(Y)" - how can an if/else rule be descended from the structure of a proto-language?
+   
+** External Explanations
+
+Explaining certain universals by positing them as a function of external, non-language, non-grammatical aspects of human cognition or behavior (instead of explaining universals as either "this is universal because this is innate and this is innate because this is universal" or in terms of "this is universal because this is how this grammatical rule operates")
+
+*** Functional Approach
+
+Posits that some universals are universal because they serve to make language more functional as a mode of communication.
+
+    + Criticisms:
+      - There are a lot of clearly dysfunctional elements in human languages. Eg: synonyms, ambiguity.
