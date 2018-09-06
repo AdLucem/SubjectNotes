@@ -1,0 +1,31 @@
+#+TITLE: Language Typology And Universals
+
+Notes for the class Language Typology and Universals, taught by Prof. Radhika Mamidi at IIIT-H.
+Interspersed with papers and notes on the readings.
+
+Here is an outline of the notes and topics taught:
+
+* Introductory
+
+  - [[class_july_31.org][Introductory Class]]
+  - [[class_2_aug.org][Universals and Differentiators Between Languages]]
+
+* The Two Approaches to Language
+
+  - [[class_7_aug.org][The Two Approaches. Also a list of the readings presented]]
+* Neurolinguistics
+
+  - [[class_17_aug.org][Language and the Brain]]
+* Language Acquisition In Children
+
+  - [[language_acquisition_steven_pinker.org][Steven Pinker's Viewpoint]]
+
+* Universals
+
+** Color Term Theory
+
+[[color_term_theory.org][Hardin's Viewpoint]]
+
+** Language Acquisition In Children
+
+  - [[language_acquisition_steven_pinker.org][Steven Pinker's Viewpoint]]

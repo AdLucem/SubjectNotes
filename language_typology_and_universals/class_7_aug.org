@@ -13,7 +13,7 @@ Class held by students.
     - Stephen Krashen- language acquisition? reading
     - Chomskyian model of language: reading
 
-    - Book: language univers
+    - Book: Bernard and Comrie
 * Animal vs. Human Communication Systems
 
 ** Features of Human Language
