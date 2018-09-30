@@ -1,0 +1,173 @@
+%++++++++++++++++++++++++++++++++++++++++
+\documentclass[letterpaper,12pt]{article}
+\usepackage{tabularx} % extra features for tabular environment
+\usepackage{amsmath}  % improve math presentation
+\usepackage{graphicx} % takes care of graphic including machinery
+\usepackage{stmaryrd} % for double brackets
+%\usepackage[margin=1in,letterpaper]{geometry} % decreases margins
+\usepackage{cite} % takes care of citations
+\usepackage[final]{hyperref} % adds hyper links inside the generated pdf file
+\hypersetup{
+	colorlinks=true,       % false: boxed links; true: colored links
+	linkcolor=blue,        % color of internal links
+	citecolor=blue,        % color of links to bibliography
+	filecolor=magenta,     % color of file links
+	urlcolor=blue         
+}
+%++++++++++++++++++++++++++++++++++++++++
+
+
+\begin{document}
+
+\title{Progress Report}
+\author{Atreyee Ghosal}
+\date{1st October 2018}
+\maketitle
+
+\section{Background}
+
+This report is a summary of the readings, discussion and work done in the Formal Logic and Semantics independent study up to this date.
+
+Some important terms used here are:
+
+\begin{itemize}
+\item[Denotation]
+The "surface" meaning of a linguistic element, what the element maps to in concept-space.
+\end{itemize}
+
+\section{Montague Semantics}
+
+\begin{quote}
+	There is in my opinion no important theoretical difference between natural languages and the artificial languages of logicians; indeed I consider it possible to comprehend the syntax and semantics of both kinds of languages with a single natural and mathematically precise theory. \\
+\textit{- Richard Montague}
+\end{quote}
+
+\subsection{Frege's Principle of Compositionality}
+
+
+\subparagraph{Notes}
+
+The crux of my reading on montague semantics is that "It does some quite cool things, and if you twist and contrive it in ways that it was probably never meant to be twisted, it does cooler things." In some sense, what is "montague semantics", where does it end, and where does it begin? \break As such, it seems that following the textbook is the best thing to do now; but the textbook follows montague's method, which is "Define a very specific fragment of english that takes care of very specific linguistic phenomena, and then define a further twisting of montague semantics for it." Given that the current work done in the field is over entire corpuses, and eschews this step-by-linguistic-step mechanism... well, there are flaws with both approaches, I'll read this. \break Well, isn't the point of this is to study both the data-driven and the rule- (or logic-) driven ends, and see which one works out first? :P
+
+\subsection{The Syntactic Algebra}
+
+\subparagraph{Note}
+Are the words "algebra", "logic system", "calculus" etc used interchangably here? One of these words would be more directly understandable for the modern reader.
+
+\subsection{The Semantic Algebra}
+
+\subsection{What is Meaning?}
+
+\subsubsection{According To Montague}
+
+The meaning, or denotation, of a sentence is the function from possible worlds/moments of time, to truth values.
+
+\subsubsection{Another Interpretation: Meaning as A Change In State}
+
+\begin{equation}
+x := e  ::  \lambda S . S [ x \mapsto \llbracket e \rrbracket ]
+\end{equation}
+ Where state is a function of \textit{s}?
+
+\subparagraph{Meeting Notes}
+There was a discussion with regards to this during the meeting on the 27th of September, 2018. 
+
+\section{Basic Categorial Grammar}
+
+\subsection{Syntactic Categories and Semantic Types}
+
+\subsubsection{Cateoogry to Type Correspondence}
+
+A mapping from a set of categories to a set of types.
+
+\begin{equation}
+\begin{split}
+\tau ( e ) = e \rightarrow m \\
+e \in Categories \\
+m \in Types \\
+\end{split}
+\end{equation}
+
+
+\subsubsection{Syntactic Categories: Why?}
+
+A tentative answer to the above question based on my reading:
+
+\begin{itemize}
+\item
+Syntactic categories: positional
+\item
+Syntactic categories concern themselves with the vagaries of syntax, which often have no effect on the deeper meaning representation. Therefore, there can be a many-to-one mapping from categories to semantic types
+\end{itemize}
+
+\subsubsection{Semantic Types: Why?}
+
+\begin{itemize}
+\item
+Restricts the possible denotations of a linguistic object. Therefore, a linguistic object in, say, category \textbf{A} can only denote objects of type \textbf{B}, where $A \Rightarrow B$, or "A \textit{maps to} B".
+\end{itemize}
+
+\subsection{Defining Logic, Feature by Linguistic Feature}
+
+\subparagraph{Observation}
+The method here is that- linguistic features (via "fragments" of English) are considered, and then a syntactic grammar is constructed to account for that feature, to which a semantic operation is mapped. However, basic categories cannot vary according to the fragment- thus, for example, the category of "Alice" in "Alice ate an ice-cream" would need to be the same as the category of "Alice" in "Alice and some people were walking."
+ 
+\subsubsection{Combinators and Co-Ordination}
+
+Statement of our rule, which is prompted by linguistic observation: in English,
+when two objects are compounded by the conjunction "and", the conjunction
+"and" takes two arguments of the same category, and the resulting compounded
+object also belongs to the categories of each of the arguments.
+
+\begin{equation}
+  \frac {X \Rightarrow A \hspace{40pt} Y \Rightarrow A}
+  {X, and, Y \Rightarrow A}
+\end{equation}
+
+Where $\Rightarrow$ denotes \emph{belongs to the category of}
+
+\paragraph{Semantic Operation:} The polymorphic co-ordination function
+(syntactically) corresponds to a polymorphic set intersection function
+(semantically).\\
+
+\begin{equation}
+  \frac {X \Rightarrow N : A \hspace{40pt} Y \Rightarrow N : A} 
+  {X, and, Y \Rightarrow M \bigcap N : A}
+\end{equation}
+
+Here, $\Rightarrow$ means that X \emph{denotes} object M in semantic space. 
+
+\subsubsection{Quantifiers and Co-Ordination}
+
+\paragraph{Lifting Rule} Lifts a name to the category of a generalized
+quantifier. $B/(A \backslash B)$ is the category of a quantifier.
+
+\begin{equation}
+  \frac {X \Rightarrow M : A}
+  {X \Rightarrow \lambda x . xM : B/(A \backslash B)}
+  L.R
+\end{equation}
+
+With the quantifier able to be placed to the left or to the right of x.
+
+\subparagraph{Note:} what has the lambda function in the denominator got to do
+with anything? Why are we using a lambda function to \emph{lift} a
+type/category/catetype?
+
+\subsection{Relation To Context Free Grammars}
+
+Basic categorial grammars can be related to context free grammars.
+
+\subparagraph{Note:} I do not see how this correlation helps.
+
+
+\section{The Category-Type Distinction: Syntax and Semantics}
+
+
+\section{Parse Trees as Proofs}
+
+An useful part of in-meeting discussion! The concept of parse trees as proofs, and the basic elements of the parse tree as the premises! (Also helped me understand the programs-as-proofs way of thinking.)
+
+And helped me understand the bit about a syntax tree as a deduction system.
+
+\end{document}
