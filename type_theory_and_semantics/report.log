@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2017.12.4)  30 SEP 2018 19:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2017.12.4)  2 OCT 2018 04:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -330,62 +330,60 @@ LaTeX Info: Redefining \nameref on input line 20.
 
 LaTeX Font Info:    Try loading font information for U+stmry on input line 26.
 
-(/usr/share/texlive/texmf-dist/tex/latex/stmaryrd/Ustmry.fd)
-Underfull \hbox (badness 10000) in paragraph at lines 49--50
-\OT1/cmr/m/n/12 I'll read this. 
- []
+(/usr/share/texlive/texmf-dist/tex/latex/stmaryrd/Ustmry.fd) [1
 
-[1
-
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 97.
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 75.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
+LaTeX Font Info:    Font shape `OMS/cmr/m/it' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 75.
+
+Underfull \hbox (badness 10000) in paragraph at lines 73--76
+
+ []
+
+[2] [3]
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 97.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 129.
 
-Overfull \hbox (1.2927pt too wide) in paragraph at lines 99--100
-\OT1/cmr/m/n/12 which of-ten have no ef-fect on the deeper mean-ing rep-re-sen-
-ta-tion. There-
+Overfull \hbox (9.69168pt too wide) in paragraph at lines 131--135
+[]\OT1/cmr/m/n/12 Syntactic cat-e-gories con-cern them-selves with syn-tac-tic 
+phe-nom-ena, which
  []
 
-[3]
-Underfull \hbox (badness 10000) in paragraph at lines 128--131
+[4]
+Underfull \hbox (badness 10000) in paragraph at lines 169--172
 
  []
 
 
-Overfull \hbox (15.87756pt too wide) in paragraph at lines 152--155
+Overfull \hbox (15.87756pt too wide) in paragraph at lines 193--196
 \OT1/cmr/m/n/12 any-thing? Why are we us-ing a lambda func-tion to \OT1/cmr/m/i
 t/12 lift \OT1/cmr/m/n/12 a type/category/catetype? 
  []
 
-
-Overfull \hbox (9.24771pt too wide) in paragraph at lines 163--163
-[]\OT1/cmr/bx/n/17.28 The Category-Type Dis-tinc-tion: Syn-tax and
- []
-
-[4]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 172.
- [5]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 172.
+[5]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 254.
+ [6]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 254.
  (./report.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 172.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 172.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 254.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 254.
 Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: 0F553191A5EA61396CBD6532402E2B43;1485.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 172.
+(rerunfilecheck)             Checksum: A715180CC43E2863B6F34D9F658F4FD6;1459.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 254.
  ) 
 Here is how much of TeX's memory you used:
- 6055 strings out of 492990
- 87161 string characters out of 6135005
- 172101 words of memory out of 5000000
- 9521 multiletter control sequences out of 15000+600000
+ 6059 strings out of 492990
+ 87233 string characters out of 6135005
+ 173101 words of memory out of 5000000
+ 9524 multiletter control sequences out of 15000+600000
  11504 words of font info for 43 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 28i,14n,28p,954b,331s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 28i,14n,28p,454b,379s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texl
@@ -394,10 +392,10 @@ mf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts
 /type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1
 /public/stmaryrd/stmary10.pfb>
-Output written on report.pdf (5 pages, 98813 bytes).
+Output written on report.pdf (6 pages, 109164 bytes).
 PDF statistics:
- 161 PDF objects out of 1000 (max. 8388607)
- 144 compressed objects within 2 object streams
- 38 named destinations out of 1000 (max. 500000)
+ 165 PDF objects out of 1000 (max. 8388607)
+ 147 compressed objects within 2 object streams
+ 39 named destinations out of 1000 (max. 500000)
  153 words of extra memory for PDF output out of 10000 (max. 10000000)
 
