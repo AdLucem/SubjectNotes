@@ -1,0 +1,51 @@
+#+TITLE: Topics in SMAI: Incomplete
+#+AUTHOR: CL
+
+Main resource: http://www.holehouse.org/mlclass/
+* Feature Space
+* Classification
+
+** Linear classifier
+** Logistic regression
+** Bayesian Classifier
+
+* Loss Functions and Optimization
+
+** Closed-Form Solution
+
+*** Analytic
+*** Pseudo-Inverse
+
+** Iterative Gradient Descent
+
+*** Iterative
+*** Stochastic
+* Support Vector Machines
+** Norms
+** Primal Problem
+** Dual Problem
+** Finding Support Vectors
+
+* Kernelization
+
+** Feature Maps and Kernels
+** Kernel SVM
+** Kernel PCA
+** Kernel LDA
+
+* Dimensionality Reduction
+
+** PCA
+** LDA
+* Clustering
+
+** K-Means and Similar
+** Hierarchical Clustering
+** Gaussian Mixture Model
+
+* Decision Trees
+
+http://dataaspirant.com/2017/01/30/how-decision-tree-algorithm-works/
+
+** Information Gain
+** Gini Coefficient
