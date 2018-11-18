@@ -1,0 +1,50 @@
+#+TITLE: India as a Linguistic Area
+#+AUTHOR: KW
+
+
+* M.B. Emmeneau
+
+** Definition of 'Linguistic Area'
+
+According to Emmeneau, the term 'linguistic area' may be defined as meaning an area which includes languages belonging to more than one family but showing traits in common which are found not to belong to the other members of at least one of the aforementioned language families.
+** Geographical and Genetic Boundaries
+
+Geographical, and not just genetic, closeness can lead to diffusion of features between languages.
+** Linguistic Features Studied
+
+*** Vocabulary Borrowings
+*** Retroflex, cerebral or domal consonants
+*** Marathi Palatal Isogloss
+*** Features that happened all at once
+
+**** Loss of the dual
+**** Loss of infixation in a certain verb type
+**** Absence of Prepositions 
+
+*** Gerund 
+*** Nominalized/Adjectivized form of verb - construction
+*** Echo-words
+*** Classifiers/Quantifiers
+
+The main contribution of M.B Emmeneau to this paper.
+* Anvita Abbi
+
+
+* Language Families of the Indian subcontinent
+
+** Emmeneau
+
+*** Dravidian
+*** Indo-Aryan
+*** Munda
+
+** Anvita Abbi
+
+*** Indo-Aryan
+*** Aryan
+*** Nuristani
+*** Dravidian
+*** Austro-asiatic
+*** Tibeto-Burman
+*** Great Andamanese
+*** Unclassified/Language Isolates
