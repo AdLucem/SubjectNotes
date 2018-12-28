@@ -1,9 +1,10 @@
 #+TITLE: Language Typology And Universals
+#+AUTHOR: AdLucem
 
 Notes for the class Language Typology and Universals, taught by Prof. Radhika Mamidi at IIIT-H.
 Interspersed with papers and notes on the readings.
 
-Here is an outline of the notes and topics taught:
+This index is an attempt to collate the work done throughout the semester into a coherent index that shows a progression of topics from the beginning to the end of the course.
 
 * Introductory
 
@@ -18,6 +19,7 @@ Here is an outline of the notes and topics taught:
   - [[class_17_aug.org][Language and the Brain]]
 * Universals
 
+** Animacy
 ** Color Term Theory
 
 [[color_term_theory.org][Hardin's Viewpoint]]
@@ -25,3 +27,21 @@ Here is an outline of the notes and topics taught:
 ** Language Acquisition In Children
 
   - [[language_acquisition_steven_pinker.org][Steven Pinker's Viewpoint]]
+** Phonological Universals - Maria Pantcheva
+** Universals in South Asian Languages
+** Greenberg's Universals
+* Typology
+
+** Morphological Typology
+** Typology of South Asian Languages
+* India as a Linguistic Area
+
+** Paper by M.B Emeneau
+** Paper by Anvita Abbi
+** Comparisions
+* Some Phenomena Studied
+
+** Causatives
+** Relative Clause Formation
+** Animacy
+** Color Terms
