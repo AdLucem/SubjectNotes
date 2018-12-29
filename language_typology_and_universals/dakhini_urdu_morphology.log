@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.11.9)  15 NOV 2018 02:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.11.9)  29 DEC 2018 19:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -844,27 +844,27 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-ABD: EveryShipout initializing macros [1
+ABD: EveryShipout initializing macros
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 30.
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 89.
- (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 89.
- [2]
-[3]
-Overfull \hbox (13.7506pt too wide) in paragraph at lines 184--185
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 30.
+ [1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] [3] [4]
+Overfull \hbox (13.7506pt too wide) in paragraph at lines 253--254
 []\OT1/cmr/m/n/10 Correct gen-der clas-si-fi-ca-tion of nouns into their re-spe
 c-tive mas-cu-line/feminine
  []
 
-[4] (./dakhini_urdu_morphology.aux) ) 
+[5] (./dakhini_urdu_morphology.aux) ) 
 Here is how much of TeX's memory you used:
  13280 strings out of 494805
  258165 string characters out of 6178000
- 300442 words of memory out of 5000000
+ 300443 words of memory out of 5000000
  16333 multiletter control sequences out of 15000+600000
  9522 words of font info for 34 fonts, out of 8000000 for 9000
  81 hyphenation exceptions out of 8191
@@ -878,10 +878,10 @@ pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></u
 sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texli
 ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on dakhini_urdu_morphology.pdf (4 pages, 124534 bytes).
+Output written on dakhini_urdu_morphology.pdf (5 pages, 127465 bytes).
 PDF statistics:
- 56 PDF objects out of 1000 (max. 8388607)
- 40 compressed objects within 1 object stream
+ 59 PDF objects out of 1000 (max. 8388607)
+ 42 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
