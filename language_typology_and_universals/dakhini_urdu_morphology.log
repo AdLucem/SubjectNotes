@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.11.9)  29 DEC 2018 19:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.12.16)  31 DEC 2018 01:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **dakhini_urdu_morphology.tex
 (./dakhini_urdu_morphology.tex
 LaTeX2e <2017-04-15>
-Babel <3.18> and hyphenation patterns for 9 language(s) loaded.
+Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
@@ -854,20 +854,20 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 30.
  [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] [3] [4]
-Overfull \hbox (13.7506pt too wide) in paragraph at lines 253--254
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] [3] [4] [5] [6]
+Overfull \hbox (13.7506pt too wide) in paragraph at lines 394--395
 []\OT1/cmr/m/n/10 Correct gen-der clas-si-fi-ca-tion of nouns into their re-spe
 c-tive mas-cu-line/feminine
  []
 
-[5] (./dakhini_urdu_morphology.aux) ) 
+[7] (./dakhini_urdu_morphology.aux) ) 
 Here is how much of TeX's memory you used:
- 13280 strings out of 494805
- 258165 string characters out of 6178000
- 300443 words of memory out of 5000000
- 16333 multiletter control sequences out of 15000+600000
+ 13280 strings out of 492982
+ 258165 string characters out of 6134895
+ 304979 words of memory out of 5000000
+ 16567 multiletter control sequences out of 15000+600000
  9522 words of font info for 34 fonts, out of 8000000 for 9000
- 81 hyphenation exceptions out of 8191
+ 1141 hyphenation exceptions out of 8191
  62i,6n,56p,433b,188s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1
 /public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
@@ -878,10 +878,10 @@ pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></u
 sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texli
 ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on dakhini_urdu_morphology.pdf (5 pages, 127465 bytes).
+Output written on dakhini_urdu_morphology.pdf (7 pages, 134070 bytes).
 PDF statistics:
- 59 PDF objects out of 1000 (max. 8388607)
- 42 compressed objects within 1 object stream
+ 67 PDF objects out of 1000 (max. 8388607)
+ 48 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
