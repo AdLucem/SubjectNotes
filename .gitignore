@@ -1,0 +1,19 @@
+
+# LaTeX
+
+*.aux
+*.log
+*.synctex.gz
+
+# Python
+
+venv/
+*.pyc
+
+# Haskell
+
+*.o
+.stack_work/
+*.yaml
+
+

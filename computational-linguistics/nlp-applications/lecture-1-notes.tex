@@ -1,0 +1,96 @@
+\documentclass{article}
+
+\usepackage{graphicx}
+\usepackage{smartdiagram} % for workflow chart
+\usepackage{todonotes}
+
+\begin{document}
+
+\title{NLP Applications: Lecture 1}
+\author{Atreyee Ghosal}
+
+% emdf
+
+\section{Introduction to Machine Translation}
+
+This is a broad introduction to the problem of machine translation
+
+\begin{itemize}
+\item
+MT is 'nlp-complete', as in most NLP tasks will be used in some way or the other in MT.
+\item
+\todo{Add notes on Vauquois-Triangle}
+\item
+Take, for example, translation from a language L1 to a language L2
+\end{itemize}
+
+A sample workflow for machine translation would be:
+\begin{itemize}
+\item[]
+Surface Form of L1
+\item[]
+$\downarrow$
+\item[]
+POS Tagging
+\item[]
+$\downarrow$
+\item[]
+Phrase Identification (Chunking)
+\item[]
+$\downarrow$
+\item[]
+Syntax Tree for L1
+\item[]
+$\downarrow$
+\item[]
+Semantic Tree for L1
+\item[]
+$\downarrow$
+\item[]
+\textbf{Interlingua}
+\item[]
+$\downarrow$
+\item[]
+Generation
+\item[]
+$\downarrow$
+\item[]
+Semantic Tree for L2
+\item[]
+$\downarrow$
+\item[]
+Syntax Tree for L2
+\item[]
+$\downarrow$
+\item[]
+Surface form of L2
+\end{itemize}
+
+\section{Challenges in Machine Translation}
+
+\todo{FILL THESE IN: DEFINITIONS AND EXAMPLES}
+
+\subsection{Lexico-Semantic  Divergence}
+
+\subsubsection{Thematic Divergence}
+\subsubsection{Promotional Divergence}
+\subsubsection{Demotional Divergence}
+\subsubsection{Structural Divergence}
+\subsubsection{Conflational Divergence}
+\subsubsection{Categorial Divergence}
+\subsubsection{Lexical Divergence}
+
+\subsection{Semantic Differences}
+
+\subsubsection{Pronominal Anaphora}
+\subsubsection{Coreference}
+\subsubsection{Discourse}
+
+Word sense disambiguation based on discourse.
+
+\subsubsection{Homographs}
+\section{Comment of the Day}
+
+\textit{"English is a creole."} - Manish Shrivastava, 2k18
+  
+\end{document}
