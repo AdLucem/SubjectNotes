@@ -1,47 +1,53 @@
 #+TITLE: Language Typology And Universals
-#+AUTHOR: AdLucem
+#+AUTHOR: the monster under my lab desk 
+
+# cl
 
 Notes for the class Language Typology and Universals, taught by Prof. Radhika Mamidi at IIIT-H.
 Interspersed with papers and notes on the readings.
 
 This index is an attempt to collate the work done throughout the semester into a coherent index that shows a progression of topics from the beginning to the end of the course.
 
-* Introductory
+* Topic-Specific Notes
 
-  - [[class_july_31.org][Introductory Class]]
-  - [[class_2_aug.org][Universals and Differentiators Between Languages]]
+** Methods of Linguistic Study
 
-* The Two Approaches to Language
+*** Mentalist: Chomsky
+*** Behaviourist: Greenberg
+** Linguistic Universals
 
- [[file:class_7_aug.org][The Two Approaches. Also a list of the readings presented]]
-* Neurolinguistics
+*** Types
 
-  - [[class_17_aug.org][Language and the Brain]]
-* Universals
+**** Formal vs. Substantiative
+**** Absolute vs. Tendencies
+**** Implicational vs. Non-Implicational
 
-** Animacy
-** Color Term Theory
+*** Explanations for The Presence of Universals
 
-[[color_term_theory.org][Hardin's Viewpoint]]
+**** Behaviouralist
+**** Universal Grammar 
+**** Functionalist
 
-** Language Acquisition In Children
+** Psycholinguistics
 
-  - [[language_acquisition_steven_pinker.org][Steven Pinker's Viewpoint]]
-** Phonological Universals - Maria Pantcheva
-** Universals in South Asian Languages
-** Greenberg's Universals
-* Typology
+*** Language Acquisition
+*** Language Loss
+*** Aphasia
 
+**** Wernicke's Aphasia
+**** Broca's Aphasia
+
+*** Intelligence and Language Usage
+*** Word Associations
+** Analysis of Specific Phenomena
+
+*** Color Term Theory
+*** Relative Clauses
+*** Causatives
+*** Animacy
+*** Case Marking
+** India As A Linguistic Area
 ** Morphological Typology
-** Typology of South Asian Languages
-* India as a Linguistic Area
-
-** Paper by M.B Emeneau
-** Paper by Anvita Abbi
-
-* Analysis of Specific Linguistic Phenomena
-
-** Causatives
-** Relative Clause Formation
-** Animacy
-** Color Terms
+** Phonological Universals
+** South Asian Languages: Typology and Universals
+** Greenberg's Universals
