@@ -1,0 +1,32 @@
+#+TITLE: Computational Linguistics-2 Notes
+#+AUTHOR: Hozier
+
+# cl
+
+An index of my (somewhat sparse) notes on the portion of the computational linguistics 2 course that focused on semantics, taught by Prof. Soma Paul and Prof. Radhika Mamidi. 
+
+* Semantics: Lecture Notes By Date/Topic
+
+  - 22/1/18: words and relations between them, sentence-level semantic representations, sub-event analysis
+  - 25/1/18: computational semantics and meaning, event-based semantic representation, semantic relations
+  - 1/2/18: compositionality and unification
+  - 3/2/18: feature structures, thematic roles
+  - 
+
+* Pragmatics: Lecture Notes By Date/Topic
+
+  - 12/2/18: inferences, Gricean maxims
+  - 15/2/18: more on inferences, local and global inference, an introduction to discourse analysis, topics in discourse analysis
+  - 19/2/18: general musings on how people transfer information via language, conversation analysis
+  - 22/2/18: the concept of schema, drawing inferences within a schema, macro- and micro-level analysis, types of coreferents
+  - 5/2/18: event semantics
+* Topic-Specific Writeups
+
+  - Models of Representing Meaning (representing-meaning.org)
+  - An Unification Approach To Compositionality
+  - Framenet
+
+* Others
+
+  - A set of slides on anaphora resolution
+  - Paper: PPAP problem solved using VERBNET

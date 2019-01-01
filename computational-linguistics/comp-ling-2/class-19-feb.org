@@ -1,5 +1,5 @@
 #+TITLE: 19/2/18 - Class Notes
-#+AUTHOR: deadciel
+#+AUTHOR: is dead
 
 # bad processing
 # bad language translation
