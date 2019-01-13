@@ -1,0 +1,109 @@
+%++++++++++++++++++++++++++++++++++++++++
+\documentclass[letterpaper,12pt]{article}
+\usepackage{tabularx} % extra features for tabular environment
+\usepackage{amsmath}  % improve math presentation
+\usepackage{graphicx} % takes care of graphic including machinery
+%usepackage{stmaryrd} % for double brackets
+%\usepackage[margin=1in,letterpaper]{geometry} % decreases margins
+\usepackage{cite} % takes care of citations
+\usepackage[final]{hyperref} % adds hyper links inside the generated pdf file
+\usepackage{csquotes}
+\usepackage{amsthm}
+\hypersetup{
+	colorlinks=true,       % false: boxed links; true: colored links
+	linkcolor=blue,        % color of internal links
+	citecolor=blue,        % color of links to bibliography
+	filecolor=magenta,     % color of file links
+	urlcolor=blue         
+}
+
+\newtheorem{theorem}{Theorem}
+
+%++++++++++++++++++++++++++++++++++++++++
+
+\title{POIS: Impossible Problems, Imperfect Solutions}
+\author{Atreyee}
+
+\begin{document}
+
+\maketitle
+
+\begin{displayquote}
+
+\textit{All information security problems have a common feature, which is that they are impossible to solve perfectly.}
+
+\end{displayquote}
+
+\begin{displayquote}
+
+\textit{All information security problems have a common solution and that is the use of destructive interference of impossibilities.}
+
+\end{displayquote}
+
+\begin{displayquote}
+
+\textit{Therefore, this course is truly fundamental and should be named The Science Of The Impossible.}
+
+- Prof. Kannan Srinathan 
+\end{displayquote}
+
+\section{Principles of Security}
+
+\subsection{Kirchoff's Principle of Security}
+
+Security is derived from the secrecy of the encryption key, not from the obscurity of the encryption algorithm. 
+
+Thus, an ideal hashing algorithm should be non-invertible.
+
+\subsection{Principle of Sufficiently Large Keyspace}
+
+\section{Ciphers}
+
+\subsection{Definition}
+
+\subsection{Monoalphabetic Substitution Cipher}
+
+How to break: frequency attack
+
+\subsection{Vigeneve Cipher}
+
+How to break: TODO
+
+\section{The Secrets of Secrecy}
+
+\subsection{Heuristic Secrecy}
+\subsection{Provable Secrecy}
+\subsection{Proven Secrecy}
+\subsection{Shannon's Perfect Secrecy}
+
+\section{The Perfect Magical Cipher: Vernam's Cipher}
+
+\begin{theorem}
+One Time Pad is perfectly secret.
+\end{theorem}
+
+\begin{proof}
+TODO: FIND PROOF
+\end{proof}
+
+\section{We Need More Keys}
+
+\begin{theorem}
+The condition of perfect secrecy is that the keyspace should be larger than or equal to the message space.
+\end{theorem}
+
+\begin{proof}
+TODO: GET PROOF
+\end{proof}
+
+\section{Channeling Secrecy}
+
+\begin{theorem}
+Transmission of a perfectly secure message can only be done at the rate of the secure channel.
+\end{theorem}
+
+\begin{proof}
+TODO: GET PROOF
+\end{proof}
+
+\end{document}
