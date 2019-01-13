@@ -1,0 +1,108 @@
+#+TITLE: Class Notes - 12th February '18
+#+AUTHOR: KW
+
+
+A resumption of pragmatics by Dr. Radhika Mamidi.
+
+* Previously in class
+
+Philosophy of language- Austin and Searle's speech acts.
+
+Sentence-meaning and speaker-meaning: sometimes, the meaning of the speaker is different from the sentence meaning.
+
+Eg:
+
+"He's a donkey."
+
+Semantic meaning: "He is an animal {donkey}"
+Pragmatic meaning: "He is a very lazy person" {Assuming this "he" is sentient}
+
+** The issue of contradicting with reality
+
+When the speaker's meaning differs from the sentence.
+** Illocution
+
+The /underlying/ speech act.
+
+** Searle's Classes of Speech Acts
+
+Based on the hypothesis that a speaker is using an utterance to convey an *intention*.
+
+Intention could be: stating facts, request, etc., depending on the context.
+
+The hearer *infers* the meaning. 
+* Inferences
+
+** Entailment
+
+Can be understood from lexical meaning.
+
+Eg: "I saw a cat" --[entails]--> "I saw an animal"
+But, "I saw an animal" --[does not entail]--> "I saw a cat"
+
+STUDY: Entailment semantic relations.
+
+** Presupposition
+
+Can be understood from lexical meaning.
+
+** Implicatures
+
+The pragmatic kind- requires world knowledge/pragmatic knowledge.
+
+Has two kinds:
+
+*** Conventional
+
+When the speaker meaning and the sentence meaning match.
+ 
+*** Conversational
+
+Elements of meaning that come from outside the text. Eg: when a person asks "What is the time?", they may mean "What is the time in Hyderabad?"
+
+World knowledge is about the position of the speaker in space and time.
+
+Eg: that famous question, "What is the time now."
+
+Can have two meanings: 
+    - Conventional (actual: what is the time)
+    - Conversational (implied: why are you home so late)
+
+In the end, all are inferences. Some inferences can be made by looking at the words, some inferences require world knowledge to make.
+* H.P.Grice
+
+He gave principles for conversation, known as /co-operative principles/
+i.e: our utterances should put the hearer in a comfortable position. That is, one should co-operate.
+
+He talks of *maxims*
+
+** Maxim of Quality
+
+/When you speak, speak the truth/
+
+** Quantity
+
+/Don't say more than necessary. Do not say less than necessary./
+
+Depending on the location of speaker or hearer, we increase or decrease the information given.
+
+** Relevance/Relation
+
+/Say what is relevant to the answer/
+
+** Manner/Clarity
+
+/Say what you wish to say, coherently, clearly, using grammatically correct sentences./
+** When the maxims are not followed
+
+When the above maxims are not followed, this leads to conversational implicatures.
+
+There are two types of not following:
+
+    + Flouting :: deliberately not sticking to the maxims, in a way that we want the hearer to know
+    + Violating :: the hearer knows???
+
+* Assignment
+
+Give examples of all of Grice's Maxims
+(With citations as to where we got the examples from)

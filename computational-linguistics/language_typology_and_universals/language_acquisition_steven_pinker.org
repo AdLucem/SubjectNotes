@@ -1,0 +1,178 @@
+#+TITLE: Language Acquisition- Textbook Chapter by Steven Pinker
+#+AUTHOR: CL
+
+* Questions About Language Cognition
+
+  + The Modularity Question ::
+
+  + The Human Uniqueness Question ::
+
+  + The Language vis-a-vis Thought Question ::
+
+  + Learning vs. Innateness ::
+
+* Biology of Language Acquisition
+
+  - Human language is made possible by special adaptations of the human brain
+  - It is these adaptations that enable children to acquire language
+
+** Evolution of Language
+
+*** Our Articulatory Structure    
+*** Our Articulatory Structure Sucks, Evolutionarily
+*** But We Evolved Language Anyway????
+*** Hey So, Did Our Ancestors Evolve It Too
+
+No, we're not talking about your mom. We already know she didn't.
+**** Does This Even Count As Language? ft. Probably Not
+**** BUT BUT
+
+Chimpanzees are the closest evolutionary relatives of humans, not their direct ancestors. We diverged from them about 6-7 million years ago. So we have the interceding lineage to check for possible traces of language evolution in our actual ancestors.
+
+**** Why Our Ancestors Probably Evolved Language Sometime
+
+     - They developed knowledge of technology and the local environment (deeper than surface-level knowledge)
+     - They were involved in extensive reciprocal co-operation (i.e: how our societies function- co-operatively)
+     - Therefore, language would be an evolutionary benefit by enabling them to (better) share difficult-to-find knowledge with others
+     - Eg: a structured system of symbols is probably better at conveying "hey, large toothed beast in that forest, don't go there" across multiple people, than pointing and screaming
+
+** Language and General Intelligence: Not The Same
+
+The brain mechanism related to language cannot be the ones related to general intelligence. We know this because of the following points:
+
+*** Language Impairment in the Time of Mental Function
+
+Intact/high cognitive function (general "smartness"), coexisting with language problems.
+
+    + Stroke patients    
+      - enormous language losses
+      - no loss in other aspects of intelligence (measured by nonverbal IQ tests)
+    + Specific Language Impairment (a set of syndromes)
+      - Language Impairments:
+        - delayed language onset
+        - childhood articulation difficulties
+        - lasting difficulty in understanding, producing and judging grammatical sentences
+     - SLI people show the difficulties despite an absence of social, sensory or cognitive problems
+      
+*** Mental Impairment in the Time of Language Function
+
+Intact language function coexisting with severe mental retardation. For example:
+
+**** Children with Spina Bifida
+
+    + Spina Bifida ::
+        - Malformation of the vertebrae that leaves the spinal cord unprotected
+        - Often (but not always) results in:
+          
+    + Hydrocephalus :: 
+        - increase in pressure filling the cavities of the brain, leaving the brain distended (swollen) from within
+        - These children often end up significantly retarded
+
+    + Language function left intact :: 
+          even the children left retarded can carry out long, articulate and fully grammatical conversations in which they vividly recall events they think are true, but are really imagined by them
+
+**** William's Syndrome
+
+     + It Is/Involves ::
+                - Inherited syndrome
+                - Physical abnormalities
+                - Significant retardation
+                - Incompetence 
+                - Socially warm and gregarious
+
+     + Fluent, articulate use of language
+
+** Maturation of the Language System 
+
+
+* The Path of Language Acquisition
+
+** Improvement of Data Collection
+** Stages of Language Acquisition in Children
+
+*** First Year of Life
+
+    - Control of speech-producing muscles
+    - Sensitivity to the phonemes used in the parent's language
+    - No correlation of sound with meaning
+
+*** Shortly/Around First Birthday *TO* Two Years
+
+    - Begin to understand words
+    - Begin to produce words in isolation
+*** Around 18 Months
+
+    - Child starts to learn ones at one every two waking hours
+    - Primitive syntax begins, with (mostly) grammatical two-word strings
+ 
+*** Late-Second-Year/Early-Third-Year of Life
+
+    - Rapidly blooms into fluent grammatical conversation
+    - Syntactic types increase rapidly, as babies combine earlier chunks into combinatorial syntactic forms
+    - Sentences get both longer and more complex
+
+*** Before The Child Turns 4
+
+All parts of the language are acquired, except for constructions that are rarely used in text or written speech.
+
+* Explaining Language Acquisition
+
+** Learnability Theory
+
+*** Parts of Language Learning
+
+This theory has defined learning as a scenario involving four parts:
+
+**** A Class of Languages
+
+    - including *target* language
+
+**** Environment
+**** Learning Strategy
+    (forms hypothesis) --> (checks if hypothesis is consistent with input information)
+
+This is the language acquisition mechanism in children. (According to this theory, anyway.)
+
+**** Success Criterion
+
+After a while, the hypothesis start being related to the structure of the target language.
+
+* What is Learned? (And What Is Not?)
+* Input For Language Acquisition
+
+*** Positive Evidence
+*** Negative Evidence
+*** Motherese
+
+Not a valid set of inputs for language development because:
+
+    - Children whose mothers use motherese more constantly don't pass through the stages of language development any faster
+    - Not all societies hold children in the same position; in some societies, children are deemed not worth talking to (and thus not talked to much), for example
+
+*** Prosody
+*** Context 
+
+Context-derived semantic input
+
+* What and When Children Learn
+
+** Structural Principle
+** Minimal Distance Principle
+
+* The Child's Language-Learning Algorithm
+
+** Extracting Simple Correlations
+** Using Prosody
+** Using Context and Semantics
+
+* Language Acquisition in Action
+
+** Bootstrapping the First Rules
+** The Organization of Grammar
+
+*** Blocking Overregularization
+*** Inflectional Overregularization
+*** Word Meaning <--> Syntax
+*** Parameter-Setting
+*** The Subset Principle
+* Further Resources

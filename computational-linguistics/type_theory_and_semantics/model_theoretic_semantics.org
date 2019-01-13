@@ -1,0 +1,35 @@
+#+TITLE: Background: Model-Theoretic Semantics
+#+AUTHOR: Atreyee Ghosal
+
+* Model
+
+#+BEGIN_QUOTE
+The basic idea is that a model is a formal construct that stands for the particular state of affairs in the world we're trying to represent. Expressions in a meaning representation language will then be mapped in a systematic way to the elements of that model.
+
+#+END_QUOTE
+
+    - Model: a formal/mathematical stand-in for the 'real world' or the world that we speak of
+    - Natural Language --> Meaning Representation Language --> Model
+
+
+** Non-Logical Vocabulary
+
+#+BEGIN_QUOTE
+The non-logical vocabulary consists of the open-ended set of names for the objects, properties and relations that make up the world we're trying to represent.
+#+END_QUOTE
+
+Non-logical vocabulary in various semantic schemes:
+
+    - FrameNet: frame names, lists of possible participants [+]
+    - Event Semantics: event labels, argument labels
+
+    - Question :: would argument types in event semantics be considered non-logical vocabulary?
+
+** Logical Vocabulary
+
+#+BEGIN_QUOTE
+The logical vocabulary consists of the closed set of symbols, quantifiers, links, etc. that provide the formal means for composing expressions in a meaning representation language.
+
+#+END_QUOTE
+
+    - Question :: A little like keywords in a programming language?

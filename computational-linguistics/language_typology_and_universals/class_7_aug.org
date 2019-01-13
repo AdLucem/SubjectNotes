@@ -1,0 +1,119 @@
+#+TITLE: Language Typology and Universals: 7-8-18
+#+AUTHOR: Atreyee Ghosal
+
+* Next Class - TODO
+
+Class held by students.
+
+  (1) Vowels and consonants in Indian languages.
+
+    - Note to self: coming tuesday, do this topic for bengali (and possibly Hindi?) - 10 to 12 minutes
+
+    - Get resources on acquisition vs. language.
+    - Stephen Krashen- language acquisition? reading
+    - Chomskyian model of language: reading
+
+    - Book: Bernard and Comrie
+* Animal vs. Human Communication Systems
+
+** Features of Human Language
+
+If all these features are present in a system, we can call it a language.
+
+# therefore, systems theory is a language
+# TODO: remove all the jokes before anyone sees this :P
+
+Note: all of these features are a good demonstration of why, for example, body language is not language.
+
+*** Ambiguity
+*** Dynamic
+
+Human language keeps changing.
+
+*** Generative
+
+With a limited set of symbols and rules, we can produce infinite variation.
+*** Creativity
+
+Semantic connection- semantically connect one sentence to an entire story (for example?)
+
+Embedded clauses are creativity too- "I went to Delhi which is located in the Northern part of India which is in Asia which-"
+
+(Note: this is largely regarded as terrible writing, unless one is Charles Dickens)
+
+*** Cultural Transmission
+*** Displacement
+
+Also: can predict or lie about things.
+*** Duality of Patterning
+
+This is also called the structural approach to language- looking at language in a structured format, breaking it down to levels for our convenience. Although it should be noted that when we use language, we process it as a whole, integrated unit.
+
+(Phonemes -> syllables)
+(syllables -> morphemes)
+(Morphemes -> Words)
+(Words -> Sentences)
+(Sentences -> Discourse)
+
+... et cetera..
+*** Abstractness
+
+There is no relation (usually) between the concepts and the noises used to describe them, except the shared knowledge between members of a language community that "yes, X thing is called [X_sound]s."
+
+Eg: chair, kursi, chaise --> all describe the same concept with different sounds
+*** Metalanguage
+
+Language talking about language.
+** Competence and Performance
+
+This is dependent on the individual.
+* Universals
+
+All of the features mentioned in 'features of human language' are universal to all languages we know.
+
+Some other universals:
+
+** Vowels and Consonants - Presence
+
+Although the number of each will vary, vowels and consonants are both present in every language.
+* Two Approaches To Language
+
+Approaches to study language typology and universals.
+
+** Greenberg
+
+   - Behaviourism
+   - Learning from the environment
+
+   - Used several languages as data- into the 300s now
+   - Studied the surface of the language- whatever was visible in the data
+   - Comparative study
+
+** Chomskyan
+
+   - Mentalism
+   - Genetic- the inherent "language instinct"
+   - Language acquisition
+   - Only one language is acquired from childhood (contested)
+
+   - Used only one language as data (english), and studied it deeply
+   - Looked into the deeper structure of language- differentiates between surface structure and deep structure
+
+*** Surface Structure and Deep Structure
+
+    - Sentences are stored as deep structures
+    - Transformation rules convert deep structures to surface structures
+
+*** Acquisition vs. Learning
+
+Is there a difference?
+
+Acquisition: kind of like a bird building a nest- some properties of language that one is born with.
+    - The speed at which acquisition happens is much faster than the speed at which learning happens
+    - acquisition does not focus so much on grammatical fundamentals
+
+Learning: teaching-based
+
+In the chomskyian perspective, we use the word "acquisition" for the first language a child learns- er, acquired.
+
+Second language onwards, we use the term "learning". Learning may be formal, or from friends, et cetera..

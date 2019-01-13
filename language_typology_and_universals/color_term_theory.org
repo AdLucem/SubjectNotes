@@ -1,2 +1,0 @@
-#+TITLE: Color Term Theory
-#+AUTHOR: CL

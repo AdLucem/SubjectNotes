@@ -1,0 +1,67 @@
+#+TITLE: CL-2 Class Notes on 5th March 2018
+#+AUTHOR: R2. Another Keeper, hey
+
+
+We performed pathetically in our midsem-1 papers, so she's going to spend this week doing event semantics.
+
+So, if you want your machine to process information, it has to be represented using a certain framework. We choose event semantics for this framework.
+
+So, when we're postulating the existence of an event, say, =x=, that event variable has to be *bound*.
+
+Like so: /E e (laugh(e))/  - i.e: there exists an event =e= such that =e= is =laugh=.
+
+Or , to say:
+
+/E x, e (cries(e), boy(x), agent(e, x))/ - i.e: there exists an event =e= and an entity =x= such that =e= is =cries=, =x= is =laugh=, and =x= is the =agent= of =e=.
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+Ontologically, an =event= in two different situations may be the same (i.e: referring to the same 'meaning'), but refer to two different =event= 's in space-time.
+
+Eg: "Ram is going." (e1)
+    "Sita is going." (e2)
+
+=e1= and =e2= are /ontologically/ the same- referring to a voluntary displacement of a physical entity- but refer to two different events.
+
+If we combine them like this:
+
+"(Ram and Sita) are going to the market." (e3)
+
+Now the question is, is it one event or two event?
+Same event with two agents?
+A point is that if we consider this as two separate events, the semantics of their going /together/ will be lost.
+
+A solution is to have /individual/ events, and then an /aggregation/. As in- "Ram is going", "Sita is going", and "They are both going together". And only when is_true(Ram is going) and is_true(Sita is going), then is_true(Sita is going). Or, to put it:
+
+is_true(e3) => is_true(e1) AND is_true(e2)
+
+But the inverse need not necessarily be true.
+
+-- Note: When we're making a representation, the analysis or representation of one sentence should not contradict the representations of the previous and following sentences.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+And we haven't even talked about time and aspect. For example, how do we encode the /simultaneity/ of e1 and e2 in e3?
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+Basically, whenever someone writes a discourse, a lot of information is /assumed/ or gained by world knowledge.
+
+But when we make a semantic representation of said discourse, we must make all those assumptions explicit.
+
+So, when we computationally represent discourse, we usually have a /file/ that contains a set of hypotheses/postulates about the world of discourse.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+Assignments:
+
+(1) Think about a proper semantic representation
+
+(2) What about *negation* ? What would be the /scope/ of negation?
+
+(3) Check up on discourse representation theory
+
+(4) BoxB? How old info gets revised when new information comes, and slowly get a correct representation of the entire discourse
+# tired AF, my notes are shit
+
+ 

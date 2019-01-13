@@ -1,0 +1,23 @@
+#+TITLE: Representing Meaning in Different Models
+#+AUTHOR: K.M
+
+
+I will provide a surface-level explanation of the different modes of meaning representation frameworks here, as well as a comparision between all of them.
+
+Ultimately we haven't found one that actually works.
+
+Most of it is about predicate logic, yes, if you are wondering.
+
+* Model
+
+A meaning representation always has context within a /model/, which is:
+
+A set of objects, properties of objects and relations between objects.
+* Predicate Logic / First-Order Logic
+
+For a basic explanation of predicate logic, go here: [[https://github.com/AdLucem/computational-semantics/blob/master/cswfp/docs/chapter-4.org][Small Predicate Logic Parser]]
+
+So how do we map predicate logic to natural language semantics?
+
+* Semantic Network
+* Frame-Based Representation

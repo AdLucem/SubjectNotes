@@ -1,0 +1,25 @@
+#+TITLE: NLP: A Paninian Perspective - Chapter 6
+#+AUTHOR: Atreyee Ghosal
+
+
+* Constraints
+
+** Ambiguous Sentence
+
+Having several graphs that satisfy the given constraints.
+
+** Ill-Formed/Ungrammatical Sentence
+
+Having no parse graph that satisfies the given constraints.
+
+* Paninian Grammar and Dependency Grammars
+
+** Similarity
+
+Both make use of constraint graphs.
+
+** Differences
+
+  - Uses an established set of kaaraka relations, instead of dependency relations
+  - Constituents in Paninian parsers are restricted enough that producing their parse is reduced to a bipartite graph matching problem
+

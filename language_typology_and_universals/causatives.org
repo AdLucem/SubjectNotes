@@ -1,4 +1,0 @@
-#+TITLE: Causative Constructions
-#+AUTHOR: CL
-
-

@@ -1,0 +1,53 @@
+#+TITLE: Language Typology And Universals
+#+AUTHOR: the monster under my lab desk 
+
+# cl
+
+Notes for the class Language Typology and Universals, taught by Prof. Radhika Mamidi at IIIT-H.
+Interspersed with papers and notes on the readings.
+
+This index is an attempt to collate the work done throughout the semester into a coherent index that shows a progression of topics from the beginning to the end of the course.
+
+* Topic-Specific Notes
+
+** Methods of Linguistic Study
+
+*** Mentalist: Chomsky
+*** Behaviourist: Greenberg
+** Linguistic Universals
+
+*** Types
+
+**** Formal vs. Substantiative
+**** Absolute vs. Tendencies
+**** Implicational vs. Non-Implicational
+
+*** Explanations for The Presence of Universals
+
+**** Behaviouralist
+**** Universal Grammar 
+**** Functionalist
+
+** Psycholinguistics
+
+*** Language Acquisition
+*** Language Loss
+*** Aphasia
+
+**** Wernicke's Aphasia
+**** Broca's Aphasia
+
+*** Intelligence and Language Usage
+*** Word Associations
+** Analysis of Specific Phenomena
+
+*** Color Term Theory
+*** Relative Clauses
+*** Causatives
+*** Animacy
+*** Case Marking
+** India As A Linguistic Area
+** Morphological Typology
+** Phonological Universals
+** South Asian Languages: Typology and Universals
+** Greenberg's Universals

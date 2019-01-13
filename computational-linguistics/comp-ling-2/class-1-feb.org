@@ -1,0 +1,107 @@
+#+TITLE: Unification-Based Approach to Compositionality
+#+AUTHOR: C.A.L
+
+
+* Lexicon
+
+Representation of a sentence will not be in the lexicon, while the representation of a word will.
+
+We have to /derive/ the meaning of a sentence.
+
+Eg: "Ram_[person_named_ram] eats_[verb_meaning_consume] mangoes[noun_mangoes]."
+
+* A Simple Grammar Overgenerates
+
+Take a basic Phrase Structure Grammar. It overgenerates- generates ungrammatical sentences. Therefore, the grammar is not sufficient, and we have to add more constraints and conditions.
+
+Eg: 
+
+S --> NP VP
+VP --> V NP
+NP  --> Det N
+Det --> a | the | these
+N --> cake | cakes | boy | boys
+V --> eat | eats
+
+The above grammar will generate: "These boy eat a cakes."
+
+Modifications to this grammar:
+
+Add ~number agreement~ constraints to the rule =NP --> Det N=.
+
+Add ~number agreement~ indicating that, in =S --> NP VP=, the ~head noun~ of the ~(subject) NP~ will agree in number with the ~head verb~ of the ~(predicate) VP~ 
+
+But, at this point, we are going beyond what a simple Context Free Grammar can define. Therefore- we study a model that allows compositionality with constraints.
+
+* How Parts Are Represented
+
+In terms of /typed feature structures/ :
+
+    - Each feature structure is labelled by a type
+    - Each type has appropriateness conditions expressing appropriateness of structures
+
+So basically, types that represent predicates.
+
+    - Type hierarchy
+
+** Feature Structure
+
+A feature structure is a list of *features* and *values*.
+
+Can have only atomic values, or complex values. Eg:
+--        --
+| Cat  NP  | 
+| Num  Sg  |       
+| Pers 3   |       
+| Case Nom |      
+--        --
+
+Feature structures are basically a directed graph (refer to slide here).
+
+** Typed Feature Structure
+
+(refer to slide)
+
+*** Value of =SEM=
+
+=SEM= is one feature within the /sign/.
+
+The value of =SEM= is an object of type /sem-obj/.
+
+This type has the following features:
+
+    - INDEX
+    - LTOP
+    - FRAME
+
+* English Resource Grammar
+* Parallel Meaning Bank
+* Importance of (giving) Head
+
+It is the head of a sentence that relates to the head of the other sentences.
+
+Also, the head and the information of its children that the head contains are being percolated down the feature graph. We capture this value using =LTOP= - the label of the top level frame in a combinatorial expression.
+
+* Constraints
+
+We assign constraints using index values and matrix values.
+
+* Unification as A Graph Matching
+
+Unification is nothing but graph matching- i.e: union of graphs.
+
+(ref. to slides)
+
+** Notion of /Pada/ and /dhatu/
+
+dhatu --> root
+pada --> word form
+
+* Notes and Questions 
+
+It's beyond time we found out what a context-sensitive grammar is?
+
+Questions: why does the head of a VP have the same agreement feature as the VP itself?
+
+
+

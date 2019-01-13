@@ -1,0 +1,70 @@
+#+TITLE: Meeting Minutes- 16th August
+#+AUTHOR: Atreyee Ghosal
+
+Montague semantics comes very close to how semantics is defined in Indian languages.
+
+# distributional compositional semantics, also the distributional semantics paper
+
+What we're looking at is word sense disambiguation. I am looking at meaning and logic.
+
+What to do today:
+
+We have /lex/- which is a lexical analyser, which takes a regex as a pattern and defines an action on it.
+
+We need conditions on the patters- those conditions are on different features of the word.
+Therefore, it's not enough to look at regular expressions, we also need to look at other properties of that string.
+
+* Entailment in ML
+
+#+BEGIN_QUOTE source: Deep Contextualized Word Representations Paper
+Textual  entailment
+
+Textual  entailment  is  the task  of  determining  whether  a  “hypothesis”  is true,  given  a  “premise”. The  Stanford  Natural Language Inference (SNLI) corpus (Bowman et al., 2015) provides approximately 550K hypothesis/premise  pairs.   Our  baseline,  the  ESIM  sequence model from Chen et al. (2017), uses a biL-
+STM to encode the premise and hypothesis,  followed  by  a  matrix  attention  layer,  a  local  inference  layer,  another  biLSTM  inference  composition layer, and finally a pooling operation before
+the  output  layer.   Overall,  adding  ELMo  to  the ESIM model improves accuracy by an average of 0.7%  across  five  random  seeds.   A  five  member ensemble  pushes  the  overall  accuracy  to  89.3%,
+exceeding  the  previous  ensemble  best  of  88.9% (Gong et al., 2018).
+#+END_QUOTE
+* Why Are We Talking About Strings
+
+We are talking about Sandhi (joining) operation, where we join two things together. Therefore, we need strings.
+
+For example: rAjan {rAja} + nas = puruSa + su
+
+w1 w2 --> w1' and w2, provided w1 starts with something and w2 ends with something, and the morphanalysis of w1 contains such and such pattern.
+
+* Questions About This System
+
+But can this system be cross-applied to other languages than the one it was meant for? 
+Also- transformation rules, are they the best or most useful way of generation?
+Also, this still does not tell us anything about the meaning or /what/ we're generating. For example, if I have, say, a set of content-word vectors, and a set of functional-word vectors, and a question to answer, how do we use the described paninian system to generate a sentence that answers the question?
+Also- Panini's rules in their current form only allow a very limited amount of context.
+
+* Information Theoretic View of Meaning
+
+Information is an object that has the potential to change the state of something.
+
+Therefore, it has meaning if it has the potential to change the state of something. Hindi notation for it- /phal/, result.
+
+Therefore... you start something, you read the sentence, some property has changed.
+
+* Efforts To Use Panini's System
+
+  - To define telegu grammar
+  - To define marathi grammar
+
+TODO :: Look for papers on the above
+
+* Question: Why Are We Sticking To Sanskrit Anyway?
+
+I mean... as a linguist, I am more concerned about the universality of deep structures rather than surface level transformation rules for Sanskrit.
+
+    - Oh, interesting: what is in that set of rules that makes surface-level generation with syntactic elements only.
+
+* Present Next Class: Rule-Based Compositional Systems for English, Hindi
+
+Based on/similar to Panini's system of rules.
+
+* Description Logic
+
+Syntax of a language: free algebra
+Meanings: mapped to another algebra with the same signature
