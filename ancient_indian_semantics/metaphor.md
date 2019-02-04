@@ -52,7 +52,7 @@ This we prove by the fact that when we see a word, we think of it's primary mean
 
 ## Buddhists: Meaning Via Metaphoric Transfer
 
-Buddhists: but hey, words have no "actual" meaning. We cannot comprehend the actual nature of objects, so the "meaning" of a word is the mental image it calls up. Given this, how can a thing that has no reality- a word- be applied to refute said so-called reality? Remember, we think that the "meaning" of the word is simply the exclusion of all objects denoted by the word; nothing more, nothing less.
+Buddhists: *exhales a cloud of smoke* but hey man, words have no "actual" meaning. We cannot comprehend the actual nature of objects, so the "meaning" of a word is the mental image it calls up. Given this, how can a thing that has no reality- a word- be applied to refute said so-called reality? Remember, we think that the "meaning" of the word is simply the exclusion of all objects denoted by the word; nothing more, nothing less.
 
 Author: words have meaning via metaphoric transfer, as they can refer to objects indirectly. Therefore meaning itself is a form of _lakshana_.
 

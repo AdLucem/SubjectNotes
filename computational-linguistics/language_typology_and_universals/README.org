@@ -32,6 +32,9 @@ This index is an attempt to collate the work done throughout the semester into a
 
 *** Language Acquisition
 *** Language Loss
+
+Happens in the reverse process as language acquisition.
+
 *** Aphasia
 
 **** Wernicke's Aphasia
