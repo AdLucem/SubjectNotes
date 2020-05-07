@@ -1,0 +1,8 @@
+#+TITLE: Social Computing
+#+AUTHOR: Atreyee Ghosal
+
+* Fake News Detection: Presentation One
+
+* Our Pres
+
+- transfer learning

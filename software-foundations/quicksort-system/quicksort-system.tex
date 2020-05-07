@@ -1,0 +1,184 @@
+% --------------------------------------------------------------
+% This is all preamble stuff that you don't have to worry about.
+% Head down to where it says "Start here"
+% --------------------------------------------------------------
+ 
+\documentclass[12pt]{article}
+ 
+\usepackage[margin=1in]{geometry} 
+\usepackage{amsmath,amsthm,amssymb,scrextend}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+
+ 
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\I}{\mathbb{I}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Q}{\mathbb{Q}}
+\renewcommand{\qed}{\hfill$\blacksquare$}
+\let\newproof\proof
+\renewenvironment{proof}{\begin{addmargin}[1em]{0em}\begin{newproof}}{\end{newproof}\end{addmargin}\qed}
+% \newcommand{\expl}[1]{\text{\hfill[#1]}$}
+ 
+\newenvironment{theorem}[2][Theorem]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{lemma}[2][Lemma]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{problem}[2][Problem]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{exercise}[2][Exercise]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{reflection}[2][Reflection]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{proposition}[2][Proposition]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{corollary}[2][Corollary]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+ 
+\begin{document}
+ 
+% --------------------------------------------------------------
+%                         Start here
+% --------------------------------------------------------------
+
+\lhead{Quicksort As A Transition System}
+\chead{Atreyee Ghosal 20161167}
+\rhead{\today}
+ 
+% \maketitle
+
+\section{Data Structures and Notation}
+
+\subsection{List}
+
+The concept of 'List' here is used to refer to a one-dimensional vector. The following operations are referred to:
+
+\begin{itemize}
+\item []
+$V_1 ++ V_2$ : refers to the concatenation of two vectors $V_1$ of dimensions $1 x m$ and $V_2$ of dimensions $1 x n$, such that the final vector has the dimensions $1 x (m + n)$
+\item []
+$V [ i : j ]$ : refers to a vector composed of elements at indices $i, i+1....j$ from the original vector
+\item []
+$length(V)$ : refers to a function that returns the length of the given vector
+\end{itemize}
+
+\subsection{Stack}
+
+\section{State Space and Initial State}
+
+\subsection{Initial State}
+
+Initial state is a tuple whose first element is a list of integers $ls$, and second element is a $stack$ with the tuple $(1, length(ls)$ as its only element.
+
+i.e: $X_0 = (ls, [(1, length(ls)])$
+
+\subsection{Final State}
+
+The final state of the transition system is when the stack is empty.
+
+\section{Output Space}
+
+Output space is the same as the input space, necessitating no mapping function between them.
+
+\section{Transition Function}
+
+Define a sub-function \textbf{Partition} as the following, where $++$ denotes the list-append operation:
+
+\begin{itemize}
+\item []
+$Partition (L, start, end, pivot) :$
+	\begin{itemize}
+	\item []
+	$ls := L[start : end]$
+	\item []
+	$smaller = \{ x | x \in ls, x < pivot \}$
+	\item []
+	$greater = \{ x | x \in ls, x \geq pivot \}$
+	\item []
+	$\forall i, start \leq i \leq end$:
+		\begin{itemize}
+			\item []
+			$L[i] := ls[i]$
+		\end{itemize}
+	\item []
+	return $L$
+	\end{itemize}
+\end{itemize}
+
+The transition function is therefore as follows:
+
+\begin{itemize}
+\item []
+$transition-function(ls, stack):$
+	\begin{itemize}
+	\item []
+	$start, end := stack[0]$
+	\item []
+	$pivot_index := n, such that 1 \leq n \leq length(ls)$
+	\item[]
+	$ls' := Partition (ls, start, end, ls[pivot_index])$
+	\item []
+	$ if (pivot - 1) > start:$
+		\begin{itemize}
+		\item []
+		$stack' = [(start, pivot - 1)] ++ stack$
+		\end{itemize}
+	\item []
+	$ if (pivot + 1) < end:$
+		\begin{itemize}
+		\item []
+		$stack' = [(pivot + 1, end)] ++ stack$
+		\end{itemize}
+	\item []
+	return $(ls', stack')$
+	\end{itemize}
+\end{itemize}
+
+\section{Proof of Termination}
+
+Since the transition system terminates when the list $stack$ is empty, proof of termination equates to a proof that stack will eventually become empty.
+
+At each iteration
+
+As element 2 is a decreasing sequence
+
+As element 1 is an increasing sequence
+
+\section{Proof of Correctness}
+
+Correctness rests on the invariant that at any state of the system, a pivot element can be chosen from list $ls$ such that:
+
+\begin{itemize}
+\item
+Elements before the pivot's index are lesser than pivot
+\item
+Elements after the pivot's index are greater than pivot.
+\end{itemize}
+
+\subsection{Base Case}
+
+When $start = end$, i.e: the list is a singlet list, then invariant holds.
+
+\subsection{Inductive Step}
+
+Assume $quicksort(ls)$ is correct for a list of length $N$.
+
+Take $quicksort(ls')$, which is a list of length $N + 1$.
+
+Choosing a pivot from $ls'$ and then calling partition on $ls'$ gives us two sub-lists, one $greater$ than pivot, the other $lesser$ than pivot.
+
+$0 \leq length(greater), length(lesser) \leq N$. Therefore, by assumption, $quicksort(greater)$ and $quicksort(lesser)$ are correct.
+
+$ls' = lesser ++ [pivot] ++ greater$, where all elements in $greater$ are greater than pivot, and all elements in $lesser$ are lesser than pivot. Therefore, $quicksort(ls')$ is correct if $quicksort(ls)$ is correct.
+
+Thus proven inductively, the invariant holds for all lists of length greater than or equal to 1.
+
+Therefore $quicksort$ system is correct.
+
+
+% --------------------------------------------------------------
+%     You don't have to mess with anything below this line.
+% --------------------------------------------------------------
+ 
+\end{document}

@@ -1,0 +1,16 @@
+
+Definition nandb (b1:bool) (b2:bool) : bool :=
+  match b1 with
+  | true => false
+  | false => b2
+  end.
+    
+  (* REPLACE THIS LINE WITH ":= _your_definition_ ." *). Admitted.
+Example test_nandb1: (nandb true false) = true.
+(* FILL IN HERE *) Admitted.
+Example test_nandb2: (nandb false false) = true.
+(* FILL IN HERE *) Admitted.
+Example test_nandb3: (nandb false true) = true.
+(* FILL IN HERE *) Admitted.
+Example test_nandb4: (nandb true true) = false.
+(* FILL IN HERE *) Admitted.
