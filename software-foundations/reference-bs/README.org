@@ -1,42 +1,16 @@
-#+title: Reference implementation of Bubblesort to demonstrate system implementation in Elm
+#+title: QuickSort Implementation in Elm
 
 * Setup
   
-  Create a new directory for your application and cd into the directory.
+- Run =elm reactor= within the directory
+- On your browser, navigate to =localhost:8080/src/System.elm=
 
-  #+BEGIN_SRC bash
-  mkdir myapp
-  cd myapp
-  #+END_SRC
+The list to be sorted is represented by the rounded circles. Dark grey elements denote unselected elements, while lighter grey denotes selected elements.
 
-  initialize elm in the directory
+The `partition` button partitions the given list (refer to `partition` function in submitted paper) between (and including) the selected elements.
 
-  #+BEGIN_SRC bash
-  elm init
-  #+END_SRC
+The `next` button pops a pair of indices from the top of the stack, partitions the list between those indices, and recurses on the two halves of the partitioned list (thus adding more elements to the stack).
 
-  add the following packages to elm.json dependencies.
-
-  #+BEGIN_SRC json
-  "MacCASOutreach/graphicsvg": "7.1.0",
-  "elm/browser": "1.0.2",
-  "elm/core": "1.0.4",
-  "elm/html": "1.0.0",
-  "elm/http": "2.0.0",
-  "elm/json": "1.1.3",
-  "elm/random": "1.0.0",
-  "elm/svg": "1.0.1",
-  "elm/time": "1.0.0",
-  "elm-community/list-extra": "8.2.3",
-  #+END_SRC
-
-  using =npm= install [[https://github.com/elm-explorations/test][elm-test]].
-
-  run =elm-test init=.
-
-  in the =tests= directory that is created automatically, add testing
-  files.
-
-  to run a test: =elm-test= in the shell.
+Underneath the buttons, the state of the stack at current time is printed.
 
   

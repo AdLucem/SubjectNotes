@@ -1,12 +1,12 @@
 module System exposing (..)
-import Html exposing (Html, text)
+import Html exposing (Html, button, div, text)
 import Html.Attributes as HA
 import Html.Events as HE
 import Browser
 import Svg exposing (Svg)
 import Svg.Attributes as SA
 import Svg.Events as SE
-import List exposing (filter, take, drop, head, tail)
+import List exposing (filter, take, drop, head, tail, map)
 import Tuple exposing (first, second)
 
 {- define the data structures -}
@@ -47,13 +47,14 @@ slice ls i j = drop i (take (j+1) ls)
 separate : List Int -> Int -> List Int
 separate ls pivot = 
   let
-    before = filter ((>=) pivot) ls
+    before = filter ((>) pivot) ls
     after = filter ((<) pivot) ls
   in
-    before ++ after
+    before ++ [pivot] ++ after
 
 partition : List Int -> Int -> Int -> Int -> List Int
 partition ls start end pivot = 
+  if (ls == []) then [] else
   let
     pre = take start ls
     post = drop (end+1) ls
@@ -64,12 +65,12 @@ partition ls start end pivot =
 
 condPre : Int -> Int -> Int -> List (Int, Int)
 condPre i start end = 
-  if ((i-1) > start) 
+  if ((i-1) >= start) 
   then [(start, i-1)]
   else []
 condPost : Int -> Int -> Int -> List (Int, Int)
 condPost i start end =
-  if ((i+1) < end)
+  if ((i+1) <= end)
   then [(i+1, end)]
   else []
 
@@ -92,17 +93,39 @@ next : List Int -> List (Int, Int) -> (List Int, List (Int, Int))
 next ls stack = 
   let 
     top = case (head stack) of
-            Nothing -> (0, 0)
+            Nothing -> (-1, -1)
             Just x -> x
+    rest = case (tail stack) of
+            Nothing -> []
+            Just xs -> xs
     s = first top
     e = second top
     pivot = case (head ls)  of
-              Nothing -> 0
+              Nothing -> -10000
               Just y -> y 
     ls_ = partition ls s e pivot
-    stack_ = appendStack stack ls s e pivot
+    stack_ = appendStack rest ls_ s e pivot
   in
+    if (top == (-1, -1)) then (ls, []) else
+    if (pivot == -10000) then ([], []) else
     (ls_, stack_)
+
+partHelper : Model -> Selections -> Model
+partHelper model selec =
+    let {array, stack, selections} = model
+    in
+        case selec of
+            NoneSelected -> model
+            OneSelected i -> model
+            BothSelected i j ->
+                let
+                    pivot = case (head array) of
+                                Nothing -> -1
+                                Just x -> x
+                    array_ = partition array i j pivot
+                in
+                    { model | array = array_ }
+
 
 select : Int -> Selections -> Selections
 select i selections =
@@ -147,12 +170,12 @@ isSelected index selections =
 init_b1 =
     { array = [30, 24, 56, 5, 0]
     , stack = [(0, 4)]
-    , selections = (BothSelected 0 4)
+    , selections = NoneSelected
     }
 
 update: Msg -> Model -> Model
 update msg model =
-    let {array, selections} = model
+    let {array, stack, selections} = model
     in
         case msg of
             ArrayItemClicked idx ->
@@ -161,14 +184,18 @@ update msg model =
                 else
                     { model | selections = select idx selections }
             Partition ->
-                {model | array = 0 :: array}
+                partHelper model selections
             Next -> 
-                {model | array = 0 :: array}
+                let new = next array stack
+                in
+                    { model | array = first new, stack = second new }
 
         
 view: Model -> Html Msg
 view model =
     let {array, stack, selections} = model
+        fstStack = map (\t -> first t) stack
+        sndStack = map (\t -> second t) stack
     in
         Html.div
             [ HA.style "border" "1px solid black"
@@ -179,13 +206,14 @@ view model =
             ]
             [
              Svg.svg
-                 [ SA.width "500px"
+                 [ SA.width "1000px"
                  , SA.height "500px"
                  , SA.viewBox "0 0 500 500"
                  ]
                  [ viewArray array selections
                  ]
-            , viewControls selections                 
+            , viewControls selections
+            , text (Debug.toString stack)                 
             ]
 
             
@@ -226,11 +254,15 @@ viewControls : Selections -> Html Msg
 viewControls selections =
     case selections of
         NoneSelected ->
-            Html.text ""
+            div [] 
+            [ button [HE.onClick Next] [text "next"]]
         OneSelected i ->
-            Html.text ""
+            div [] 
+            [ button [HE.onClick Next] [text "next"]]
         BothSelected i j ->
-            Html.span[HE.onClick Partition][Html.text "partition"]
+            div []
+            [ button [HE.onClick Partition] [text "partition"],
+              button [HE.onClick Next] [text "next"] ]
             
 
 main = Browser.sandbox
