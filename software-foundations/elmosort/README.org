@@ -1,0 +1,16 @@
+#+title: QuickSort Implementation in Elm
+
+* Setup
+  
+- Run =elm reactor= within the directory
+- On your browser, navigate to =localhost:8080/src/System.elm=
+
+The list to be sorted is represented by the rounded circles. Dark grey elements denote unselected elements, while lighter grey denotes selected elements.
+
+The `partition` button partitions the given list (refer to `partition` function in submitted paper) between (and including) the selected elements.
+
+The `next` button pops a pair of indices from the top of the stack, partitions the list between those indices, and recurses on the two halves of the partitioned list (thus adding more elements to the stack).
+
+Underneath the buttons, the state of the stack at current time is printed.
+
+  
